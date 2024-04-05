@@ -4,7 +4,7 @@ const NotFound = () => {
   return (
     <html>
       <body className="text-center">
-        <h1 className="mt-10">Something went wrong!</h1>
+        <h1 className="mt-10 text-2xl">Something went wrong!</h1>
       </body>
     </html>
   );

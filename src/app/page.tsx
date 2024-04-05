@@ -1,7 +1,5 @@
 import { redirect } from "next/navigation";
 
-const RootPage = () => {
+export default function RootPage() {
   redirect("/bs");
-};
-
-export default RootPage;
+}
