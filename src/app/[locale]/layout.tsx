@@ -1,4 +1,4 @@
-import ChangeLanguage from "@/components/ChangeLanguage";
+import ChangeLanguage from "@/app/[locale]/components/ChangeLanguage";
 import "./globals.css";
 
 interface LocaleLayoutProps {

@@ -4,9 +4,10 @@ import React from "react";
 import Section2 from "@/assets/section2.png";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const AboutEvent = () => {
+  const locale = useLocale();
   const t = useTranslations("Event");
   return (
     <section className="w-full relative h-[800px] overflow-hidden bg-mainColor">
@@ -28,7 +29,10 @@ const AboutEvent = () => {
               architecto vero delectus!
             </p>
             <div className="flex items-center justify-center md:justify-start">
-              <Link href="/" className=" bg-orange-500 rounded-full py-2 px-4">
+              <Link
+                href={`/${locale}/tehnical-informations`}
+                className=" bg-orange-500 rounded-full py-2 px-4"
+              >
                 <span className="uppercase font-bold text-sm">
                   {t("button")}
                 </span>

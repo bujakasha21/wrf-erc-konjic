@@ -1,7 +1,7 @@
-import HeroSection from "@/components/HeroSection";
-import Organization from "@/components/Organization";
-import Sponsors from "@/components/Sponsors";
-import AboutEvent from "@/components/aboutEvent";
+import HeroSection from "@/app/[locale]/components/HeroSection";
+import Organization from "@/app/[locale]/components/Organization";
+import Sponsors from "@/app/[locale]/components/Sponsors";
+import AboutEvent from "@/app/[locale]/components/aboutEvent";
 
 import React from "react";
 
