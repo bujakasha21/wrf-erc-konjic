@@ -5,5 +5,17 @@
     "desc1": "We look forward to seeing you in",
     "descbold": "Konjic | BiH",
     "desc2": "for the WRF Senior European Rafting Championship."
+  },
+  "Event": {
+    "event": "Tournament",
+    "button": "Tehnical informations"
+  },
+  "Organization": {
+    "org": "Organization",
+    "btn1": "button 1",
+    "btn2": "button 2"
+  },
+  "Sponsors": {
+    "title": "Our Sponsors"
   }
 }

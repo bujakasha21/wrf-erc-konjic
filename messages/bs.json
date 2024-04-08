@@ -5,5 +5,17 @@
     "desc1": "Radujemo se vašem dolasku u",
     "descbold": "Konjic | BiH",
     "desc2": "na seniorsko Evropsko prvenstvo u raftingu."
+  },
+  "Event": {
+    "event": "Takmičenje",
+    "button": "Tehničke informacije"
+  },
+  "Organization": {
+    "org": "Organizacija",
+    "btn1": "potvrda 1",
+    "btn2": "potvrda 2"
+  },
+  "Sponsors": {
+    "title": "Naši sponzori"
   }
 }

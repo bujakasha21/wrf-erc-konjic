@@ -10,7 +10,7 @@ const HeroSection = () => {
   const t = useTranslations("Header");
   return (
     <section className="w-full relative min-h-screen lg:h-[940px] overflow-hidden bg-mainColor">
-      <div className="flex absolute w-5/6 items-center inset-0 h-full mx-auto">
+      <div className="flex absolute w-11/12 md:w-5/6 items-center inset-0 h-full mx-auto">
         <div className="w-full md:w-1/2 text-center md:text-left text-white flex flex-col gap-y-10">
           <div className="flex flex-col text-2xl uppercase">
             <h4 className="font-medium">{t("event")}</h4>

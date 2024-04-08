@@ -1,4 +1,4 @@
-import Nav from "@/components/Nav";
+import ChangeLanguage from "@/components/ChangeLanguage";
 import "./globals.css";
 
 interface LocaleLayoutProps {
@@ -12,7 +12,6 @@ export default function LocaleLayout({
 }: Readonly<LocaleLayoutProps>) {
   return (
     <html lang={locale}>
-      <Nav />
       <main>{children}</main>
     </html>
   );
