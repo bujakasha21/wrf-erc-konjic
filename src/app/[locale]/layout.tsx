@@ -1,5 +1,5 @@
-import Nav from "@/components/Nav";
 import "./globals.css";
+import LayoutWrapper from "@/components/LayoutWrapper";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -12,8 +12,9 @@ export default function LocaleLayout({
 }: Readonly<LocaleLayoutProps>) {
   return (
     <html lang={locale}>
-      <Nav />
-      <main>{children}</main>
+      <body>
+        <LayoutWrapper>{children}</LayoutWrapper>
+      </body>
     </html>
   );
 }
