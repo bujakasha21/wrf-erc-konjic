@@ -15,9 +15,13 @@ module.exports = {
         secCol: "#0b5b92",
         thirdCol: "#9cd54b",
         textColor: "#e2e8f0",
+        titleCol: "#01385E",
       },
       backgroundImage: {
-        mainColGradient: "linear-gradient(0deg, #FFFFFF 0%, #3B8A99 100%)",
+        mainColGradient:
+          "radial-gradient(circle, rgba(59,138,153,1) 0%, rgba(11,91,146,1) 80%)",
+        lightColGradient:
+          "radial-gradient(circle, #9cd54b 0%, rgba(11,91,146,1) 80%)",
       },
     },
   },

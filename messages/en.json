@@ -12,14 +12,13 @@
   },
   "Organization": {
     "org": "Organization",
-    "btn1": "contact us",
-    "btn2": "button 2"
+    "btn1": "Timetable",
+    "btn2": "Events"
   },
   "Sponsors": {
     "title": "Our Sponsors"
   },
-  "Footer": {
-    "title1": "Join us at",
-    "title2": "WRF SENIOR EUROPEAN RAFTING CHAMPIONSHIP 2024"
+  "Gallery": {
+    "title": "Where Bosnia meets Herzegovina"
   }
 }
