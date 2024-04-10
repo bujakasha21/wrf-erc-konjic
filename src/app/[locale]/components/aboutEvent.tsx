@@ -10,9 +10,9 @@ const AboutEvent = () => {
   const locale = useLocale();
   const t = useTranslations("Event");
   return (
-    <section className="w-full relative h-[800px] overflow-hidden bg-mainColor">
+    <section className="w-full relative h-[800px] bg-gradient-to-t from-mainColor to-transparent overflow-hidden">
       <div className="flex absolute w-11/12 md:w-5/6 items-center justify-between inset-0 h-full mx-auto">
-        <div className="w-full md:w-1/2 text-center md:text-left text-white flex flex-col gap-y-8">
+        <div className="w-full md:w-1/2 text-center md:text-left text-secCol flex flex-col gap-y-8">
           <div className="flex flex-col text-3xl uppercase">
             <h3 className="font-bold  text-5xl">{t("event")}</h3>
           </div>
@@ -31,9 +31,9 @@ const AboutEvent = () => {
             <div className="flex items-center justify-center md:justify-start">
               <Link
                 href={`/${locale}/tehnical-informations`}
-                className=" bg-orange-500 rounded-full py-2 px-4"
+                className="bg-thirdCol rounded-full py-2 px-4"
               >
-                <span className="uppercase font-bold text-sm">
+                <span className="uppercase font-bold text-white text-sm">
                   {t("button")}
                 </span>
               </Link>
@@ -41,7 +41,7 @@ const AboutEvent = () => {
           </div>
         </div>
         <div className="hidden md:flex items-end justify-end md:w-[15rem] lg:w-[20rem] mb-[13rem] h-full">
-          <p className="text-secCol font-bold">
+          <p className="text-thirdCol font-bold">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
             quisquam consectetur magni soluta, eos provident perspiciatis
             nesciunt animi.
@@ -50,11 +50,12 @@ const AboutEvent = () => {
       </div>
       <div className="hidden md:flex items-center justify-end w-full h-full">
         <Image
-          className="h-auto md:w-[43rem] lg:w-[53rem]"
+          className="h-screen md:w-[43rem] lg:w-[53rem]"
           src={Section2}
           alt=""
         />
       </div>
+      {/* <div className="absolute bottom-0 w-full h-[50vh] z-10 bg-gradient-to-t from-mainColor to-transparent" /> */}
     </section>
   );
 };

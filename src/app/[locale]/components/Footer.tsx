@@ -6,8 +6,11 @@ import { useRef } from "react";
 import WhiteLogo from "@/assets/logo-white.png";
 import Image from "next/image";
 import { navbarList } from "@/data/nav/nav";
+// import { useTranslations } from "next-intl";
 
 function Footer() {
+  // const t = useTranslations("Footer");
+
   const footerRef = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: footerRef,
@@ -23,18 +26,18 @@ function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="w-full min-h-screen flex items-center justify-center bg-secCol p-32 pb-14"
+      className="w-full min-h-screen flex items-center justify-center bg-secCol p-32"
     >
       <motion.div
         data-scroll
         data-scroll-speed="0.2"
-        className=" w-full px-4 text-textColor flex flex-col"
+        className="w-full px-4 text-textColor flex flex-col"
         style={{ opacity }}
       >
         <div className="w-full text-6xl font-bold">
           <h1 className="w-full md:w-4/5">
-            Join us at
-            <br /> WRF SENIOR EUROPEAN CHAMPIONSHIP 2024!
+            gsdgsdgsdgsd
+            <br /> gdsgsdgsdgsdgdsgsd
           </h1>
         </div>
         <div className="flex mt-8 flex-col md:flex-row md:justify-between">

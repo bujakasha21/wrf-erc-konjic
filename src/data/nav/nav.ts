@@ -4,6 +4,6 @@ export const navbarList = [
   { name: "Konjic", href: "/" },
   { name: "Neretva", href: "/" },
   { name: "Sponzori", href: "/" },
-  { name: "Informacije", href: "/" },
+  { name: "Informacije", href: "/tehnical-informations" },
   { name: "Kontakt", href: "/" },
 ];

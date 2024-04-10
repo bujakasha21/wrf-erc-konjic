@@ -2,12 +2,13 @@ import Image from "next/image";
 import pics from "@/assets/3pics.png";
 
 //lang
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 //images
 import Link from "next/link";
 
 const Organization = () => {
+  const locale = useLocale();
   const t = useTranslations("Organization");
   return (
     <section className="w-full lg:h-[800px] overflow-hidden">
@@ -32,10 +33,13 @@ const Organization = () => {
               architecto vero delectus!
             </p>
             <div className="flex items-center justify-center text-white gap-x-8 lg:justify-end">
-              <Link href="/" className=" bg-orange-500 rounded-full py-2 px-4">
+              <Link
+                href={`/${locale}/contact`}
+                className="bg-thirdCol rounded-full py-2 px-4"
+              >
                 <span className="uppercase font-bold text-sm">{t("btn1")}</span>
               </Link>
-              <Link href="/" className=" bg-orange-500 rounded-full py-2 px-4">
+              <Link href="/" className="bg-thirdCol rounded-full py-2 px-4">
                 <span className="uppercase font-bold text-sm">{t("btn2")}</span>
               </Link>
             </div>

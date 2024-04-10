@@ -32,7 +32,7 @@ const Nav = () => {
   return (
     <nav className={`fixed w-full z-[50]`}>
       <motion.div
-        className="flex items-center  justify-center uppercase"
+        className="flex items-center justify-center uppercase"
         variants={animations.color}
         initial="initial"
         animate={isActive ? "open" : "closed"}

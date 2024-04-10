@@ -1,46 +1,24 @@
 import Image from "next/image";
-import pics from "@/assets/3pics.png";
+import coverImg from "@/assets/Kopija datoteke Foto uz logotip Welcome to Konjic.jpg";
 
 //lang
 import { useTranslations } from "next-intl";
 
 //images
 import Link from "next/link";
+import ContactForm from "../components/ContactForm";
 
 const Page = () => {
-  const t = useTranslations("Organization");
   return (
-    <section className="w-full lg:h-[800px] overflow-hidden">
-      <div className="flex flex-col lg:flex-row w-11/12 py-20 gap-y-10 gap-x-4 lg:py-0 md:w-5/6 items-center justify-evenly md:justify-between inset-0 h-full mx-auto">
-        <div className="w-full lg:w-2/3">
-          <Image src={pics} alt="raft" />
+    <section className="w-full h-screen relative">
+      <div className="flex flex-col absolute items-center justify-center h-full w-full mt-14 gap-y-10">
+        <h1 className="text-5xl font-bold text-textColor">Contact Form</h1>
+        <div className="w-4/5 block rounded-lg bg-[hsla(199,88%,67%,0.3)] px-6 py-12 h-fit backdrop-blur-[30px]">
+          <ContactForm />
         </div>
-        <div className="w-full lg:w-1/3 text-center lg:text-right flex flex-col justify-end gap-y-8">
-          <div className="flex flex-col text-3xl uppercase">
-            <h3 className="font-bold text-secCol text-4xl">{t("org")}</h3>
-          </div>
-          <div className="flex flex-col gap-y-4">
-            <h6 className="text-lg font-bold text-blue-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-              ullam in quas nesciunt pariatur accusantium neque mollitia dolor
-              dolorem?
-            </h6>
-            <p className="text-md text-blue-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum
-              nulla neque magni reprehenderit mollitia, atque perspiciatis amet
-              vitae fugiat et asperiores sed iste saepe excepturi autem
-              architecto vero delectus!
-            </p>
-            <div className="flex items-center justify-center text-white gap-x-8 lg:justify-end">
-              <Link href="/" className=" bg-orange-500 rounded-full py-2 px-4">
-                <span className="uppercase font-bold text-sm">{t("btn1")}</span>
-              </Link>
-              <Link href="/" className=" bg-orange-500 rounded-full py-2 px-4">
-                <span className="uppercase font-bold text-sm">{t("btn2")}</span>
-              </Link>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div className="w-full h-[600px] overflow-hidden">
+        <Image src={coverImg} alt="coverImg" />
       </div>
     </section>
   );

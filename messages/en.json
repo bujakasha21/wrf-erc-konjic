@@ -12,10 +12,14 @@
   },
   "Organization": {
     "org": "Organization",
-    "btn1": "button 1",
+    "btn1": "contact us",
     "btn2": "button 2"
   },
   "Sponsors": {
     "title": "Our Sponsors"
+  },
+  "Footer": {
+    "title1": "Join us at",
+    "title2": "WRF SENIOR EUROPEAN RAFTING CHAMPIONSHIP 2024"
   }
 }
