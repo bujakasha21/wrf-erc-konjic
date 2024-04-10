@@ -53,7 +53,6 @@ const Nav = () => {
           <NavMenu
             selectedLink={selectedLink}
             setSelectedLink={setSelectedLink}
-            isActive={isActive}
           />
         )}
       </AnimatePresence>

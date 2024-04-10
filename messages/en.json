@@ -12,10 +12,13 @@
   },
   "Organization": {
     "org": "Organization",
-    "btn1": "button 1",
-    "btn2": "button 2"
+    "btn1": "Timetable",
+    "btn2": "Events"
   },
   "Sponsors": {
     "title": "Our Sponsors"
+  },
+  "Gallery": {
+    "title": "Where Bosnia meets Herzegovina"
   }
 }
