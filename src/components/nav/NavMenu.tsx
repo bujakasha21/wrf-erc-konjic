@@ -5,7 +5,6 @@ import { navbarList } from "@/data/nav/nav";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import * as animations from "@/animations/animations";
-import imagex from "@/assets/logo.png";
 import Image from "next/image";
 
 interface NavMenuProps {

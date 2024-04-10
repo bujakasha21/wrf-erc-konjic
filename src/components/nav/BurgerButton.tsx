@@ -1,7 +1,4 @@
-"use client";
-
 import { FC } from "react";
-
 import { motion } from "framer-motion";
 import * as animations from "@/animations/animations";
 

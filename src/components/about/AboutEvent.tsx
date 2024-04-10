@@ -2,10 +2,9 @@ import Image from "next/image";
 import React from "react";
 
 import Section2 from "@/assets/section2.png";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-import Button from "./utils/Buttons";
+import Button from "../utils/Buttons";
 
 const AboutEvent = () => {
   const locale = useLocale();
@@ -23,7 +22,6 @@ const AboutEvent = () => {
               <span className="text-xs block">About the WRF</span>
             </span>
             <h3 className="font-bold text-titelCol text-7xl">{t("event")}</h3>
-            {/* <h3 className="font-bold text-7xl">{t("event")}</h3> */}
           </div>
           <div className="flex flex-col gap-y-4">
             <h6 className="text-xl font-bold">

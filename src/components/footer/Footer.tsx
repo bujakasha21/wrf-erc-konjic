@@ -5,7 +5,7 @@ import { useRef } from "react";
 import WhiteLogo from "@/assets/logo-white.png";
 import Image from "next/image";
 import { navbarList } from "@/data/nav/nav";
-import Button from "./utils/Buttons";
+import Button from "../utils/Buttons";
 
 function Footer() {
   const footerRef = useRef<HTMLElement | null>(null);

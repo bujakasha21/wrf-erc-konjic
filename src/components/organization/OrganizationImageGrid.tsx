@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 export const generateSquares = () => {
-  return shuffle(gridImages).map((sq) => (
+  return gridImages.map((sq) => (
     <motion.div
       key={sq.id}
       layout
@@ -24,11 +24,9 @@ const OrganizationImageGrid = () => {
   const [squares, setSquares] = useState(generateSquares());
 
   const shuffleSquares = useCallback(() => {
-    {
-      setSquares(generateSquares());
+    setSquares(generateSquares());
 
-      timeoutRef.current = setTimeout(shuffleSquares, 3000);
-    }
+    timeoutRef.current = setTimeout(shuffleSquares, 3000);
   }, []);
 
   useEffect(() => {

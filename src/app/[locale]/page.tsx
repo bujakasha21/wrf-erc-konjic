@@ -1,12 +1,11 @@
-import HeroSection from "@/app/[locale]/components/HeroSection";
-// import Organization from "@/app/[locale]/components/Organization";
-import Sponsors from "@/app/[locale]/components/Sponsors";
-import AboutEvent from "@/app/[locale]/components/aboutEvent";
-import Organization from "@/app/[locale]/components/organization/Organization";
-import Countries from "./components/Countries";
-
 import React from "react";
-import Gallery from "@/app/[locale]/components/gallery/Gallery";
+
+import HeroSection from "@/components/home/HeroSection";
+import AboutEvent from "@/components/about/AboutEvent";
+import Organization from "@/components/organization/Organization";
+import Sponsors from "@/components/sponsors/Sponsors";
+import Countries from "@/components/countries/Countries";
+import Gallery from "@/components/gallery/Gallery";
 
 export default function Home() {
   return (

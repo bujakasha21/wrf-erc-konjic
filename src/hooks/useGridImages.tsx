@@ -10,54 +10,33 @@ import img9 from "@/assets/organization/image9.jpg";
 import img10 from "@/assets/organization/image10.jpg";
 import img11 from "@/assets/organization/image11.jpg";
 import img12 from "@/assets/organization/image12.jpg";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export const gridImages = [
-  {
-    id: 1,
-    src: img1,
-  },
-  {
-    id: 2,
-    src: img2,
-  },
-  {
-    id: 3,
-    src: img3,
-  },
-  {
-    id: 4,
-    src: img4,
-  },
-  {
-    id: 5,
-    src: img5,
-  },
-  {
-    id: 6,
-    src: img6,
-  },
-  {
-    id: 7,
-    src: img7,
-  },
-  {
-    id: 8,
-    src: img8,
-  },
-  {
-    id: 9,
-    src: img9,
-  },
-  {
-    id: 10,
-    src: img10,
-  },
-  {
-    id: 11,
-    src: img11,
-  },
-  {
-    id: 12,
-    src: img12,
-  },
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+  img12,
 ];
+
+export const generateSquares = () => {
+  return gridImages.map((img, i) => (
+    <motion.div
+      key={i}
+      layout
+      transition={{ duration: 1.5, type: "spring" }}
+      className="w-full h-full relative"
+    >
+      <Image alt="ERP 2024 Konjic" src={img} fill className="object-cover" />
+    </motion.div>
+  ));
+};

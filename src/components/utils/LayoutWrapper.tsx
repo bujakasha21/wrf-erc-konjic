@@ -1,7 +1,7 @@
 "use client";
 import { FC, useEffect } from "react";
-import Footer from "./Footer";
-import Nav from "./nav/Nav";
+import Footer from "../footer/Footer";
+import Nav from "../nav/Nav";
 
 interface LayoutWrapperProps {
   children: React.ReactNode;
