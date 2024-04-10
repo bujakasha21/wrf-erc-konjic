@@ -1,6 +1,6 @@
 import ChangeLanguage from "@/app/[locale]/components/ChangeLanguage";
 import "./globals.css";
-import LayoutWrapper from "@/components/LayoutWrapper";
+import LayoutWrapper from "./components/LayoutWrapper";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;

@@ -2,10 +2,10 @@
 import { useScroll, motion, useTransform } from "framer-motion";
 import Link from "next/link";
 import { useRef } from "react";
-// import Magnetic from "./Magnetic";
 import WhiteLogo from "@/assets/logo-white.png";
 import Image from "next/image";
 import { navbarList } from "@/data/nav/nav";
+import Button from "./utils/Buttons";
 
 function Footer() {
   const footerRef = useRef<HTMLElement | null>(null);
@@ -13,13 +13,9 @@ function Footer() {
     target: footerRef,
     offset: ["100px end", "end end"],
   });
-  const date = new Date();
-  const buttonX = useTransform(scrollYProgress, [0.5, 1], [0, 300]);
-  const buttonRotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [0, 0.8]);
-  const y = useTransform(scrollYProgress, [0, 1], [150, 0]);
 
-  // console.log(scrollYProgress);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0, 0.8]);
+
   return (
     <footer
       ref={footerRef}
@@ -45,12 +41,9 @@ function Footer() {
             VAT/TAX ID 00951040146
           </p>
           <div className="w-44 pt-6 md:pt-0">
-            <Link
-              href="#"
-              className="bg-thirdCol justify-center text-center rounded-lg shadow px-10 py-3 flex items-center"
-            >
-              Saznaj više!
-            </Link>
+            <Button colorType="light">
+              <Link href="#">Saznaj više!</Link>
+            </Button>
           </div>
         </div>
         <div className="flex flex-col">

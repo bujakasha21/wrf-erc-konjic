@@ -1,16 +1,14 @@
 "use client";
 
 import { FC } from "react";
-
 import { navbarList } from "@/data/nav/nav";
 import Link from "next/link";
-
 import { motion } from "framer-motion";
 import * as animations from "@/animations/animations";
 import imagex from "@/assets/logo.png";
 import Image from "next/image";
+
 interface NavMenuProps {
-  isActive: boolean;
   selectedLink: {
     isActive: boolean;
     index: number;
@@ -18,11 +16,7 @@ interface NavMenuProps {
   setSelectedLink: (value: { isActive: boolean; index: number }) => void;
 }
 
-const NavMenu: FC<NavMenuProps> = ({
-  isActive,
-  selectedLink,
-  setSelectedLink,
-}) => {
+const NavMenu: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
   const getChar = (title: string) => {
     return title.split("").map((char, index) => (
       <motion.span
@@ -47,9 +41,9 @@ const NavMenu: FC<NavMenuProps> = ({
       animate="enter"
       exit="exit"
     >
-      <div className="uppercase font-medium px-8 ">
+      <div className="uppercase font-medium px-8 py-2">
         <div className="w-full h-full flex items-center justify-between">
-          <div className="flex flex-wrap gap-8  w-1/2">
+          <div className="flex flex-wrap gap-8 w-1/2">
             {navbarList.map(({ name, href }, i) => {
               return (
                 <Link
@@ -64,7 +58,7 @@ const NavMenu: FC<NavMenuProps> = ({
                   className="overflow-hidden"
                 >
                   <motion.p
-                    className="flex text-3xl font-bold"
+                    className="flex text-4xl font-bold"
                     variants={animations.blur}
                     initial="inital"
                     animate={
@@ -80,12 +74,16 @@ const NavMenu: FC<NavMenuProps> = ({
             })}
           </div>
           <motion.div
-            className="w-[300px] h-[300px] relative"
+            className="w-[30rem] h-[30rem] relative"
             variants={animations.opacity}
             initial="inital"
             animate={selectedLink.isActive ? "open" : "closed"}
           >
-            <Image src={imagex} alt="Nav image" fill={true} />
+            <Image
+              src={navbarList[selectedLink.index].image}
+              alt="Nav image"
+              fill={true}
+            />
           </motion.div>
         </div>
       </div>
