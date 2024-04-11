@@ -21,7 +21,7 @@ function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="w-full min-h-screen flex items-center justify-center bg-secCol p-32 pb-14"
+      className="w-full min-h-screen flex items-center justify-center bg-mainColGradient px-4 xl:px-28 py-8 xl:py-24"
     >
       <motion.div
         data-scroll
@@ -30,10 +30,10 @@ function Footer() {
         style={{ opacity }}
       >
         <div className="w-full text-6xl font-bold">
-          <h1 className="w-full md:w-4/5">
+          <h2 className="w-full md:w-4/5 text-titleCol">
             Join us at
             <br /> WRF SENIOR EUROPEAN CHAMPIONSHIP 2024!
-          </h1>
+          </h2>
         </div>
         <div className="flex mt-8 flex-col md:flex-row md:justify-between">
           <p className="w-full md:w-2/3 text-gray-400">
@@ -43,7 +43,7 @@ function Footer() {
             VAT/TAX ID 00951040146
           </p>
           <div className="w-44 pt-6 md:pt-0">
-            <Button colorType="light">
+            <Button>
               <Link href="#">Saznaj više!</Link>
             </Button>
           </div>

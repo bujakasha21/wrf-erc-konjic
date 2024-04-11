@@ -38,6 +38,14 @@
     "btn1": "Timetable",
     "btn2": "Events"
   },
+  "Neretva": {
+    "title": "Where Ancient Bridges Span Modern Lives",
+    "event": "The Rafting Europe Championships take place in Konjic",
+    "desc1": "Nestled in the scenic heart of Bosnia and Herzegovina, Konjic embodies the true essence of a cultural crossroads. This picturesque town, framed by the rugged peaks of the Dinaric Alps and the emerald waters of the Neretva River, serves not just as a geographical gateway but as a portal to the past. Here, centuries-old traditions continue to thrive in the streets and markets, where the rich history of Bosnia and Herzegovina is reflected in every corner.",
+    "desc2": "Nestled in the scenic heart of Bosnia and Herzegovina, Konjic embodies the true essence of a cultural crossroads. This picturesque town, framed by the rugged peaks of the Dinaric Alps and the emerald waters of the Neretva River, serves not just as a geographical gateway but as a portal to the past. Here, centuries-old traditions continue to thrive in the streets and markets, where the rich history of Bosnia and Herzegovina is reflected in every corner.",
+    "btn1": "Timetable",
+    "btn2": "Events"
+  },
 
   "Sponsors": {
     "title": "Our Sponsors"

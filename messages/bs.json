@@ -1,26 +1,55 @@
 {
   "Header": {
-    "date": "10. jun - 15. jun",
-    "event": "Konjic | Bosna i Hercegovina | 2024",
-    "header": "Doživite adrenalin koji vam voda pruža",
-    "desc1": "Radujemo se vašem dolasku u",
-    "descbold": "Konjic | BiH",
-    "desc2": "na seniorsko Evropsko prvenstvo u raftingu."
+    "date": "10-15. juni, Konjic, Bosna i Hercegovina",
+    "event": "Evropsko Prvenstvo u Raftingu 2024",
+    "header": "Doživite uzbuđenje s elitom evropskog raftinga!",
+    "desc1": "Osjetite puls evropske rafting scene u bujnim pejzažima ",
+    "descbold": "Konjica.",
+    "desc2": " Budite svjedoci drame, takmičenja i čiste radosti raftinga u jednoj od najzahtjevnijih prirodnih arena."
   },
   "Event": {
-    "event": "Takmičenje",
+    "title": "O Prvenstvu",
+    "event": "Turnir",
+    "desc1": "Pridružite nam se u uzbudljivim strujama rijeke Neretve na godišnjem Evropskom Prvenstvu u Raftingu.",
+    "desc2": "Svjedočite kako timovi iz 19 zemalja odmjeravaju snage kroz talase u testu snage, vještine i duha. Ovo vrhunsko događanje slavi jedinstvo i uzbuđenje raftinga, nudeći spektakl žestoke konkurencije i timskog duha usred zadivljujućih prirodnih pejzaža Bosne i Hercegovine.",
     "button": "Tehničke informacije"
   },
   "Organization": {
-    "org": "Organizacija",
-    "btn1": "kontaktiraj nas",
-    "btn2": "potvrda 2"
+    "title": "Vodič za Rafting Rijekom",
+    "event": "Organizacija Događaja",
+    "desc1": "U srcu Bosne i Hercegovine, živopisni grad Konjic ponosno domaćin je Evropskog Prvenstva u Raftingu na smaragdnim vodama rijeke Neretve. Ovaj događaj okupit će preko 30 zemalja i 400 vrhunskih sportista koji će se natjecati za prevlast na jednoj od najizazovnijih i najljepših rijeka u Europi.",
+    "desc2": "Klub vodiča za rafting rijekom u Konjicu, sa svojim stručnim znanjem i strašću za brzacima, predvodi organizaciju nezaboravnog tjedna. Gledatelji, sportaši i ljubitelji raftinga pretvorit će obale Neretve u središte uzbuđenja, kulture i sporta. Očekujte niz uzbudljivih natjecanja i živopisnih lokalnih događaja koje priprema naš posvećeni tim.",
+    "btn1": "Raspored",
+    "btn2": "Događaji"
+  },
+  "Countries": {
+    "title": "Natjecateljski Timovi",
+    "event": "Najbolji u Europi",
+    "desc1": "Predstavljajući elitne rafting timove iz 19 različitih zemalja, svaki tim donosi svoju jedinstvenu sposobnost i strast na vode. Upoznajte timove, njihovu povijest i što ih motivira da se natječu na najvišim razinama evropskog raftinga.",
+    "desc2": "Ovogodišnji sastav uključuje iskusne šampione i nadolazeće zvijezde, sve se sastaju u Konjicu kako bi testirali svoje sposobnosti protiv snažnih struja rijeke Neretve. Od strateškog timskog rada francuskih veslača do čiste snage norveških timova, svaka priča tima dodaje sloj uzbuđenja prvenstvu. Budite svjedoci kako ovi sportaši pomiču svoje granice, utjelovljujući duh avanture i zajedništva koji definira sport raftinga.",
+    "btn1": "Raspored",
+    "btn2": "Događaji"
+  },
+  "Konjic": {
+    "title": "Gdje Drevni Mostovi Spajaju Moderne Živote",
+    "event": "Evropsko Prvenstvo u Raftingu održava se u Konjicu",
+    "desc1": "Smješten u slikovitom srcu Bosne i Hercegovine, Konjic utjelovljuje pravu bit kulturnog raskršća. Ovaj živopisan grad, okružen strmim vrhovima Dinarskih Alpi i smaragdnim vodama rijeke Neretve, služi ne samo kao geografska kapija već i kao portal u prošlost. Ovdje, stoljećima stare tradicije i dalje cvatu na ulicama i tržnicama, gdje se bogata povijest Bosne i Hercegovine odražava u svakom kutku.",
+    "desc2": "Smješten u slikovitom srcu Bosne i Hercegovine, Konjic utjelovljuje pravu bit kulturnog raskršća. Ovaj živopisan grad, okružen strmim vrhovima Dinarskih Alpi i smaragdnim vodama rijeke Neretve, služi ne samo kao geografska kapija već i kao portal u prošlost. Ovdje, stoljećima stare tradicije i dalje cvatu na ulicama i tržnicama, gdje se bogata povijest Bosne i Hercegovine odražava u svakom kutku.",
+    "btn1": "Raspored",
+    "btn2": "Događaji"
+  },
+  "Neretva": {
+    "title": "Gdje Drevni Mostovi Spajaju Moderne Živote",
+    "event": "Evropsko Prvenstvo u Raftingu održava se u Konjicu",
+    "desc1": "Smješten u slikovitom srcu Bosne i Hercegovine, Konjic utjelovljuje pravu bit kulturnog raskršća. Ovaj živopisan grad, okružen strmim vrhovima Dinarskih Alpi i smaragdnim vodama rijeke Neretve, služi ne samo kao geografska kapija već i kao portal u prošlost. Ovdje, stoljećima stare tradicije i dalje cvatu na ulicama i tržnicama, gdje se bogata povijest Bosne i Hercegovine odražava u svakom kutku.",
+    "desc2": "Smješten u slikovitom srcu Bosne i Hercegovine, Konjic utjelovljuje pravu bit kulturnog raskršća. Ovaj živopisan grad, okružen strmim vrhovima Dinarskih Alpi i smaragdnim vodama rijeke Neretve, služi ne samo kao geografska kapija već i kao portal u prošlost. Ovdje, stoljećima stare tradicije i dalje cvatu na ulicama i tržnicama, gdje se bogata povijest Bosne i Hercegovine odražava u svakom kutku.",
+    "btn1": "Raspored",
+    "btn2": "Događaji"
   },
   "Sponsors": {
-    "title": "Naši sponzori"
+    "title": "Naši Sponzori"
   },
-  "Footer": {
-    "title1": "Pridružite nam se na",
-    "title2": "WRF SENIORSKOM EVROPSKOM PRVENSTVU U RAFTINGU 2024"
+  "Gallery": {
+    "title": "Gdje se Bosna sastaje s Hercegovinom"
   }
 }

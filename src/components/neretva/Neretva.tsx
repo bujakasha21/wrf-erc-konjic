@@ -1,30 +1,21 @@
 import Image from "next/image";
 import React from "react";
 
-import neretva from "@/assets/neretva.jpg";
+import neretva from "@/assets/city/neretva.jpg";
+import { useTranslations } from "next-intl";
+import Title from "../utils/Title";
 
 const Nerertva = () => {
+  const t = useTranslations("Neretva");
   return (
-    <section className="w-full h-screen lg:h-[600px] my-20 overflow-hidden">
-      <div className="flex flex-col lg:flex-row items-center justify-between px-28 h-full gap-x-8">
-        <div className="flex flex-col text-left gap-y-4">
-          <span className="uppercase text-thirdCol text-xs md:text-xl font-semibold block">
-            Rijeka
-          </span>
-          <h3 className="font-bold text-titleCol text-5xl uppercase">
-            Neretva
-          </h3>
-          <p className="pt-8">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-            quod officia aut ratione sed deleniti delectus consectetur, nihil ex
-            numquam nulla porro dolores possimus magni veritatis consequuntur
-            minima? Sed, soluta!Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Magnam quod officia aut ratione sed deleniti
-            delectus consectetur, nihil ex numquam nulla porro dolores possimus
-            magni veritatis consequuntur minima? Sed, soluta!
-          </p>
+    <section className="w-full overflow-hidden">
+      <div className="flex flex-col lg:flex-row items-start justify-between px-28 py-24 h-full gap-x-8">
+        <Image height={800} width={800} src={neretva} alt="Neretva" />
+        <div className="flex flex-col text-left gap-y-4 mt-10 w-[70%]">
+          <Title textSize="text-3xl" translation="Neretva" />
+          <p className="text-md my-5">{t("desc1")}</p>
+          <p className="text-md">{t("desc2")}</p>
         </div>
-        <Image height={450} width={550} src={neretva} alt="konjic" />
       </div>
     </section>
   );
