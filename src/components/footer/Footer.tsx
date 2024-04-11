@@ -21,7 +21,7 @@ function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="w-full min-h-screen flex items-center justify-center bg-mainColGradient px-4 xl:px-28 py-8 xl:py-24"
+      className="w-full min-h-screen flex items-center justify-center bg-mainColGradient px-4 xl:px-28 py-8 xl:pt-24"
     >
       <motion.div
         data-scroll
@@ -30,7 +30,7 @@ function Footer() {
         style={{ opacity }}
       >
         <div className="w-full text-6xl font-bold">
-          <h2 className="w-full md:w-4/5 text-titleCol">
+          <h2 className="w-full md:w-4/5 text-thirdCol">
             Join us at
             <br /> WRF SENIOR EUROPEAN CHAMPIONSHIP 2024!
           </h2>
