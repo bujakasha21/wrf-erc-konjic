@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import * as animations from "@/animations/animations";
 import Image from "next/image";
+import { useLocale } from "next-intl";
 
 interface NavMenuProps {
   selectedLink: {
@@ -16,6 +17,8 @@ interface NavMenuProps {
 }
 
 const NavMenu: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
+  const locale = useLocale();
+
   const getChar = (title: string) => {
     return title.split("").map((char, index) => (
       <motion.span
@@ -52,7 +55,7 @@ const NavMenu: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
                   onMouseLeave={() =>
                     setSelectedLink({ isActive: false, index: i })
                   }
-                  href={href}
+                  href={`/${locale}/${href}`}
                   key={i}
                   className="overflow-hidden"
                 >

@@ -1,5 +1,4 @@
 import "@/styles/global.css";
-import ChangeLanguage from "@/components/utils/ChangeLanguage";
 import LayoutWrapper from "@/components/utils/LayoutWrapper";
 
 interface LocaleLayoutProps {

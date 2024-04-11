@@ -6,15 +6,17 @@ import WhiteLogo from "@/assets/logo-white.png";
 import Image from "next/image";
 import { navbarList } from "@/data/nav/nav";
 import Button from "../utils/Buttons";
+import { useLocale } from "next-intl";
 
 function Footer() {
+  const locale = useLocale();
   const footerRef = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: footerRef,
     offset: ["100px end", "end end"],
   });
 
-  const opacity = useTransform(scrollYProgress, [0, 1], [0, 0.8]);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], [0, 1]);
 
   return (
     <footer
@@ -61,7 +63,7 @@ function Footer() {
                   <Link
                     className="hidden md:block cursor-pointer text-textColor hover:text-thirdCol uppercase"
                     key={i + href + name}
-                    href={href}
+                    href={`${locale}/${href}`}
                   >
                     {name}{" "}
                   </Link>

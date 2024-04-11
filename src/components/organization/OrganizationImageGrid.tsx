@@ -36,7 +36,11 @@ const OrganizationImageGrid = () => {
   }, [shuffleSquares]);
 
   return (
-    <div className="grid grid-cols-3 grid-rows-4 h-[450px] gap-1">
+    <div
+      data-scroll
+      data-scroll-speed="0.2"
+      className="grid grid-cols-3 grid-rows-4 h-[450px] gap-1"
+    >
       {squares.map((sq) => sq)}
     </div>
   );
