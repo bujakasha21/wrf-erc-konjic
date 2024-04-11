@@ -19,7 +19,6 @@ const LayoutWrapper: FC<LayoutWrapperProps> = ({ children }) => {
     <>
       <Nav />
       <main>{children}</main>
-      <div className="h-screen" />
       <Footer />
     </>
   );

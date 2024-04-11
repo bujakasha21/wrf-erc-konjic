@@ -12,7 +12,7 @@ import ContactHeading from "@/components/ContactHeading";
 
 const Page = () => {
   return (
-    <section className="w-full min-h-screen overflow-hidden py-10">
+    <section className="w-full overflow-hidden py-10 ">
       <div className="flex flex-col items-center justify-center h-full w-full mt-14">
         <div className="">
           <ContactHeading />

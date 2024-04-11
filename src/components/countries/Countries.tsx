@@ -32,7 +32,7 @@ const Column: FC<ColumnProps> = ({ start, end, countryCodes, motionValue }) => {
           <Image
             src={germany}
             alt={alt}
-            width={300}
+        width={300}
             height={500}
             unoptimized={true}
             loading="lazy"
