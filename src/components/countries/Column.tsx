@@ -1,9 +1,15 @@
 "use client";
 import React, { FC, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image"; // Ensure you're importing Image from 'next/image'
-import { motion } from "framer-motion";
+import { MotionValue, motion } from "framer-motion";
 import germany from "@/assets/countries/germany.jpg";
-import { ColumnProps } from "@/types/interfaces/countries.interface";
+
+export interface ColumnProps {
+  start: number;
+  end: number;
+  countryCodes: string[];
+  motionValue: MotionValue;
+}
 
 const Column: FC<ColumnProps> = ({ start, end, countryCodes, motionValue }) => {
   const countryFlags = useMemo(() => {

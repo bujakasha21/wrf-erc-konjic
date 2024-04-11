@@ -13,7 +13,6 @@ import NavMenuBackground from "./NavMenuBackground";
 import BurgerButton from "./BurgerButton";
 
 import Logo from "@/assets/logo.png";
-import ChangeLanguage from "../utils/ChangeLanguage";
 
 const Nav = () => {
   const pathname = usePathname();

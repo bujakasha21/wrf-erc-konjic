@@ -9,19 +9,21 @@ import Gallery from "@/components/gallery/Gallery";
 import Konjic from "@/components/konjic/Konjic";
 import Nerertva from "@/components/neretva/Neretva";
 import Map from "@/components/Map";
+import Title from "@/components/utils/Title";
+import CountriesWrapper from "@/components/countries/CountriesWrapper";
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
       <AboutEvent />
-      <Organization />
-      <Konjic />
-      <Nerertva />
       <Sponsors />
-      <Map />
-      <Countries />
+      <Organization />
+      <CountriesWrapper />
+      <Konjic />
       <Gallery />
+      <Nerertva />
+    
     </div>
   );
 }

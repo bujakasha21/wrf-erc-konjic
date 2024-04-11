@@ -1,21 +1,44 @@
 {
   "Header": {
-    "date": "10 june - 15 june",
-    "event": "Konjic | Bosnia & Herzegovina | 2024",
-    "header": "Experience the thrill of the water",
-    "desc1": "We look forward to seeing you in",
-    "descbold": "Konjic | BiH",
-    "desc2": "for the WRF Senior European Rafting Championship."
+    "date": "June 10-15, Konjic, Bosnia and Herzegovina",
+    "event": "Europe Rafting Championship 2024",
+    "header": "Embrace the Rush Europe's Rafting Elite!",
+    "desc1": "Feel the heartbeat of Europe’s rafting scene in the lush landscapes of ",
+    "descbold": "Konjic.",
+    "desc2": " Witness the drama, the competition, and the sheer joy of rafting in one of nature’s most challenging arenas."
   },
   "Event": {
+    "title": "About the Championship",
     "event": "Tournament",
+    "desc1": "    Join us in the thrilling currents of Neretva river for the annual Europe Rafting Championship.",
+    "desc2": "Witness teams from across 19 nations as they battle through waves in a test of strength, skill, and spirit.This premier event celebrates the unity and excitement of rafting, offering a spectacle of fierce competition and team spirit amidst Bosnia and Herzegovina's stunning natural landscapes.",
     "button": "Tehnical informations"
   },
   "Organization": {
-    "org": "Organization",
+    "title": "Rafting River Guide",
+    "event": "Event organization",
+    "desc1": "In the heart of Bosnia and Herzegovina, the vibrant town of Konjic is proud to host the Europe Rafting Championship on the emerald waters of the Neretva River. This event will feature over 30 countries and 400 top athletes vying for supremacy on one of Europe's most challenging and picturesque rivers.",
+    "desc2": "The River Rafting Guide Club of Konjic, with their expert knowledge and passion for the rapids, is at the forefront of organizing an unforgettable week. Spectators, athletes, and rafting aficionados will transform the shores of the Neretva into a hub of excitement, culture, and sport. Expect a series of compelling competitions and vibrant local events curated by our committed team.",
     "btn1": "Timetable",
     "btn2": "Events"
   },
+  "Countries": {
+    "title": "Competing Teams",
+    "event": "The europe best",
+    "desc1": "Featuring elite rafters from 19 different countries, each team brings their unique prowess and passion to the waters. Get to know the teams, their history, and what drives them to compete at the highest levels of European rafting.",
+    "desc2": "This year's lineup includes seasoned champions and rising stars, all converging in Konjic to test their mettle against the formidable currents of the Neretva River. From the strategic teamwork of the French paddlers to the sheer power of the Norwegian squads, each team's story adds a layer of excitement to the championship. Witness as these athletes push their limits, embodying the spirit of adventure and camaraderie that defines the sport of rafting.",
+    "btn1": "Timetable",
+    "btn2": "Events"
+  },
+  "Konjic": {
+    "title": "Competing Teams",
+    "event": "The europe best",
+    "desc1": "Featuring elite rafters from 19 different countries, each team brings their unique prowess and passion to the waters. Get to know the teams, their history, and what drives them to compete at the highest levels of European rafting.",
+    "desc2": "This year's lineup includes seasoned champions and rising stars, all converging in Konjic to test their mettle against the formidable currents of the Neretva River. From the strategic teamwork of the French paddlers to the sheer power of the Norwegian squads, each team's story adds a layer of excitement to the championship. Witness as these athletes push their limits, embodying the spirit of adventure and camaraderie that defines the sport of rafting.",
+    "btn1": "Timetable",
+    "btn2": "Events"
+  },
+
   "Sponsors": {
     "title": "Our Sponsors"
   },
