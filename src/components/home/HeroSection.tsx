@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 //images
-import headerPhoto from "@/assets/rafting.png";
+import headerPhoto from "@/assets/rafting3.png";
 
 const HeroSection = () => {
   const t = useTranslations("Header");
   return (
-    <section className="w-full relative min-h-screen lg:h-[940px] overflow-hidden bg-mainColGradient">
+  <section className="w-full relative min-h-screen  overflow-hidden bg-mainColGradient">
       <div className="flex absolute w-11/12 md:w-5/6 items-center inset-0 h-full mx-auto">
         <div
           data-scroll
@@ -32,15 +32,15 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="hidden md:flex items-center justify-end w-full h-full relative">
+      <div className="w-full h-full">
         <Image
-          className="h-auto md:w-[43rem] lg:w-[53rem]"
+          className="h-auto w-full"
           src={headerPhoto}
           alt="rafting_photo"
         />
       </div>
     </section>
-  );
+);
 };
 
 export default HeroSection;

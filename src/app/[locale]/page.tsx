@@ -14,16 +14,7 @@ export default function Home() {
       <AboutEvent />
       <Sponsors />
       <Organization />
-      <div>
-        <div className="text-6xl font-bold  px-[10%] mb-24">
-          <span className="block mb-4 text-xs md:text-sm text-thirdCol font-medium">
-            WRF 2024
-          </span>
-          <h3 className="font-bold text-titleCol text-7xl">
-            Over 30 countries
-          </h3>
-        </div>
-      </div>
+
       <Countries />
       <div className="h-screen flex flex-col justify-end">
         <h2>

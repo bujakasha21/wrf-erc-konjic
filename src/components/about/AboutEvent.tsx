@@ -12,6 +12,9 @@ const AboutEvent = () => {
   return (
     <section className="w-full relative overflow-hidden ">
       <div
+        //Data scroll se koristi pomocu locomotive scrolla
+        // data-scoll je da ga locomotive registruje
+        //data-scroll-speed - manji speed, ici ce drugacije od ostatka stranice
         data-scroll
         data-scroll-speed="0.1"
         className="flex absolute w-11/12 md:w-5/6 items-start justify-between inset-0 h-full mx-auto"

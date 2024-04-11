@@ -17,7 +17,7 @@ const Button: FC<ButtonProps> = ({ onClick, children, colorType = "dark" }) => {
       className={`relative group px-8 h-14 ${bgCol}
     before:absolute 
     before:inset-0 
-    before:${bgColBefore}
+    before:bg-mainColor
     before:scale-x-0 
     before:origin-right
     before:transition
