@@ -1,4 +1,11 @@
-export const shuffle = (array: JSX.Element[]) => {
+import { StaticImageData } from "next/image";
+
+interface GridImagesProps {
+  id: number;
+  src: StaticImageData;
+}
+
+export const shuffle = (array: GridImagesProps[]) => {
   let currentIndex = array.length,
     randomIndex;
 

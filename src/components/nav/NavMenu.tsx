@@ -18,7 +18,6 @@ interface NavMenuProps {
 
 const NavMenu: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
   const locale = useLocale();
-
   const getChar = (title: string) => {
     return title.split("").map((char, index) => (
       <motion.span

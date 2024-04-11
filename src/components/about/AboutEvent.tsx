@@ -11,6 +11,8 @@ const AboutEvent = () => {
   const t = useTranslations("Event");
   return (
     <section className="w-full relative overflow-hidden ">
+
+
       <div className="flex absolute px-4 md:px-28 items-start justify-between inset-0 h-full mx-auto">
         <div
           data-scroll

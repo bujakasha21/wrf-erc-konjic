@@ -1,51 +1,13 @@
 "use client";
-import React, { FC, useEffect, useMemo, useRef, useState } from "react";
-import Image from "next/image"; // Ensure you're importing Image from 'next/image'
+import { useMemo, useRef } from "react";
+
 import countries from "@/data/countries.json";
 import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
-import germany from "@/assets/countries/germany.jpg";
+
 import useWindowDimensions from "@/hooks/useWindowDimensions";
-interface ColumnProps {
-  start: number;
-  end: number;
-  countryCodes: string[];
-  motionValue: MotionValue;
-}
+import { Transforms } from "@/types/interfaces/countries.interface";
+import Column from "./Column";
 
-const Column: FC<ColumnProps> = ({ start, end, countryCodes, motionValue }) => {
-  const countryFlags = useMemo(() => {
-    return countryCodes.slice(start, end).map((iso) => ({
-      src: `https://flagcdn.com/256x192/${iso.toLowerCase()}.webp`,
-      alt: iso,
-    }));
-  }, [start, end, countryCodes]);
-
-  return (
-    <motion.div
-      className={`w-[10vw] h-full flex flex-col min-w-[100px] relative ${
-        start ? "-top-[45%]" : "-top-[25%]"
-      }`}
-      style={{ y: motionValue }}
-    >
-      {countryFlags.map(({ src, alt }, index) => (
-        <div key={index} className="w-full h-full relative mb-5">
-          <Image
-            src={germany}
-            alt={alt}
-        width={300}
-            height={500}
-            unoptimized={true}
-            loading="lazy"
-            className={`object-cover h-auto`}
-          />
-        </div>
-      ))}
-    </motion.div>
-  );
-};
-type Transforms = {
-  [key: `y${number}`]: MotionValue;
-};
 
 const Countries = () => {
   const { height } = useWindowDimensions();
@@ -56,38 +18,52 @@ const Countries = () => {
   });
 
   const tranforms: Transforms = {
-    y1: useTransform(scrollYProgress, [0, 1], [0, height]),
-    y2: useTransform(scrollYProgress, [0, 1], [0, -height]),
-    y3: useTransform(scrollYProgress, [0, 1], [0, height * 1.2]),
-    y4: useTransform(scrollYProgress, [0, 1], [0, -height * 1.1]),
-    y5: useTransform(scrollYProgress, [0, 1], [0, height * 1.1]),
+    y1: useTransform(scrollYProgress, [0, 1], [0, -height * 2]),
+    y2: useTransform(scrollYProgress, [0, 1], [0, height * 1]),
+    y3: useTransform(scrollYProgress, [0, 1], [0, -height * 2]),
+    // y4: useTransform(scrollYProgress, [0, 1], [0, -height * 1.1]),
+    // y5: useTransform(scrollYProgress, [0, 1], [0, height * 1.1]),
   };
 
   const { countryCodes } = countries;
-  const numberOfColumns = 5;
+  const numberOfColumns = 3;
   const chunkSize = useMemo(
     () => Math.ceil(countryCodes.length / numberOfColumns),
     [countryCodes]
   );
 
   return (
-    <div
-      ref={ref}
-      className=" h-[120vh] py-12 flex justify-center gap-[2vw]  p-[2vw] overflow-hidden "
-    >
-      {Array.from({ length: numberOfColumns }).map((_, columnIndex) => {
-        const motionValue = tranforms[`y${columnIndex + 1}`];
-        return (
-          <Column
-            key={columnIndex}
-            start={columnIndex * chunkSize}
-            end={Math.min((columnIndex + 1) * chunkSize, countryCodes.length)}
-            countryCodes={countryCodes}
-            motionValue={motionValue}
-          />
-        );
-      })}
-    </div>
+    <>
+      <div>
+        <div className="text-6xl font-bold  px-[10%] mb-24">
+          <span className="block mb-4 text-xs md:text-sm text-thirdCol font-medium">
+            WRF 2024
+          </span>
+          <h3 className="font-bold text-titleCol text-7xl">
+            Over 30 countries
+          </h3>
+        </div>
+      </div>
+
+      <div
+        ref={ref}
+        className=" h-[100vh] flex w-full gap-[2vw] justify-center overflow-hidden "
+      >
+        {Array.from({ length: numberOfColumns }).map((_, columnIndex) => {
+          const motionValue = tranforms[`y${columnIndex + 1}`];
+
+          return (
+            <Column
+              key={columnIndex}
+              start={columnIndex * chunkSize}
+              end={Math.min((columnIndex + 1) * chunkSize, countryCodes.length)}
+              countryCodes={countryCodes}
+              motionValue={motionValue}
+            />
+          );
+        })}
+      </div>
+    </>
   );
 };
 
