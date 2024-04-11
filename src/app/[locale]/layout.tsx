@@ -1,11 +1,12 @@
-import ChangeLanguage from "@/app/[locale]/components/ChangeLanguage";
-import "./globals.css";
-import LayoutWrapper from "./components/LayoutWrapper";
+import "@/styles/global.css";
+import LayoutWrapper from "@/components/utils/LayoutWrapper";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
   params: { locale: string };
 }
+
+const locales = ["en", "bs"];
 
 export default function LocaleLayout({
   children,
@@ -16,8 +17,6 @@ export default function LocaleLayout({
       <body>
         <LayoutWrapper>{children}</LayoutWrapper>
       </body>
-
-      <main>{children}</main>
     </html>
   );
 }

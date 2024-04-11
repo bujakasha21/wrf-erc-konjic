@@ -1,15 +1,15 @@
-import img1 from "@/assets/organization/1.jpg";
-import img2 from "@/assets/organization/2.jpg";
-import img3 from "@/assets/organization/3.jpg";
-import img4 from "@/assets/organization/4.jpg";
-import img5 from "@/assets/organization/5.jpg";
-import img6 from "@/assets/organization/6.jpg";
-import img7 from "@/assets/organization/7.jpg";
-import img8 from "@/assets/organization/8.jpg";
-import img9 from "@/assets/organization/9.jpg";
-import img10 from "@/assets/organization/10.jpg";
-import img11 from "@/assets/organization/11.jpg";
-import img12 from "@/assets/organization/12.jpg";
+import img1 from "@/assets/organization/image1.jpg";
+import img2 from "@/assets/organization/image2.jpg";
+import img3 from "@/assets/organization/image3.jpg";
+import img4 from "@/assets/organization/image4.jpg";
+import img5 from "@/assets/organization/image5.jpg";
+import img6 from "@/assets/organization/image6.jpg";
+import img7 from "@/assets/organization/image7.jpg";
+import img8 from "@/assets/organization/image8.jpg";
+import img9 from "@/assets/organization/image9.jpg";
+import img10 from "@/assets/organization/image10.jpg";
+import img11 from "@/assets/organization/image11.jpg";
+import img12 from "@/assets/organization/image12.jpg";
 
 export const gridImages = [
   {

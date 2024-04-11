@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.text-str {
+  color: #fff;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+
+.text-str2 {
+  color: #000;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
