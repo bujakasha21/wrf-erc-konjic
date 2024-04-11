@@ -1,6 +1,7 @@
 import "@/styles/global.css";
 import LayoutWrapper from "@/components/utils/LayoutWrapper";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -28,10 +29,13 @@ export default function LocaleLayout({
   params: { locale },
 }: Readonly<LocaleLayoutProps>) {
   unstable_setRequestLocale(locale);
+  const messages = useMessages();
   return (
     <html lang={locale}>
       <body>
-        <LayoutWrapper>{children}</LayoutWrapper>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <LayoutWrapper>{children}</LayoutWrapper>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

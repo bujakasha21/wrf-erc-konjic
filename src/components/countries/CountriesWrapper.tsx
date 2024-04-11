@@ -1,3 +1,4 @@
+"use client";
 import Title from "../utils/Title";
 import { useTranslations } from "next-intl";
 import Countries from "./Countries";

@@ -1,29 +1,24 @@
-import Image from "next/image";
+"use client";
 import React from "react";
 
 import Map from "../Map";
+import konjic from "@/assets/city/konjic.jpg";
+import Image from "next/image";
+import Title from "../utils/Title";
+import { useTranslations } from "next-intl";
 
 const Konjic = () => {
+  const t = useTranslations("Konjic");
   return (
     <section className="w-full h-screen lg:h-[600px] my-20 overflow-hidden">
-      <div className="flex flex-col lg:flex-row items-center justify-between px-28 h-full gap-x-8">
-        <div className="flex flex-col text-left gap-y-4">
-          <span className="uppercase text-thirdCol text-xs md:text-xl font-semibold block">
-            Grad
-          </span>
-          <h3 className="font-bold text-titleCol text-5xl uppercase">Konjic</h3>
-          <p className="pt-8">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-            quod officia aut ratione sed deleniti delectus consectetur, nihil ex
-            numquam nulla porro dolores possimus magni veritatis consequuntur
-            minima? Sed, soluta!Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Magnam quod officia aut ratione sed deleniti
-            delectus consectetur, nihil ex numquam nulla porro dolores possimus
-            magni veritatis consequuntur minima? Sed, soluta!
-          </p>
+      <div className="flex flex-col lg:flex-row items-start justify-between px-28 h-full gap-x-8">
+        <div className="flex flex-col text-left gap-y-4 mt-10 w-[70%]">
+          <Title textSize="text-3xl" translation="Konjic" />
+          <p className="text-md my-5">{t("desc1")}</p>
+          <p className="text-md">{t("desc2")}</p>
         </div>
-        {/* <Image height={450} width={550} src={konjic} alt="konjic" /> */}
-        <Map />
+        <Image height={450} width={550} src={konjic} alt="konjic" />
+        {/* <Map /> */}
       </div>
     </section>
   );

@@ -3,7 +3,6 @@ import coverImg from "@/assets/Kopija datoteke Foto uz logotip Welcome to Konjic
 import headerPhoto from "@/assets/rafting.png";
 
 //lang
-import { useTranslations } from "next-intl";
 
 //images
 import Link from "next/link";
