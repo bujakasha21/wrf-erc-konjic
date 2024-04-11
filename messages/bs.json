@@ -1,5 +1,6 @@
 {
   "Header": {
+    "date": "10. jun - 15. jun",
     "event": "Konjic | Bosna i Hercegovina | 2024",
     "header": "Doživite adrenalin koji vam voda pruža",
     "desc1": "Radujemo se vašem dolasku u",
@@ -12,10 +13,14 @@
   },
   "Organization": {
     "org": "Organizacija",
-    "btn1": "potvrda 1",
+    "btn1": "kontaktiraj nas",
     "btn2": "potvrda 2"
   },
   "Sponsors": {
     "title": "Naši sponzori"
+  },
+  "Footer": {
+    "title1": "Pridružite nam se na",
+    "title2": "WRF SENIORSKOM EVROPSKOM PRVENSTVU U RAFTINGU 2024"
   }
 }

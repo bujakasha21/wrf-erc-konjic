@@ -8,6 +8,7 @@ import useWindowDimensions from "@/hooks/useWindowDimensions";
 import { Transforms } from "@/types/interfaces/countries.interface";
 import Column from "./Column";
 
+
 const Countries = () => {
   const { height } = useWindowDimensions();
   const ref = useRef<null | HTMLDivElement>(null);

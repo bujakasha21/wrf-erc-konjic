@@ -11,20 +11,21 @@ const AboutEvent = () => {
   const t = useTranslations("Event");
   return (
     <section className="w-full relative overflow-hidden ">
-      <div
-        //Data scroll se koristi pomocu locomotive scrolla
-        // data-scoll je da ga locomotive registruje
-        //data-scroll-speed - manji speed, ici ce drugacije od ostatka stranice
-        data-scroll
-        data-scroll-speed="0.1"
-        className="flex absolute w-11/12 md:w-5/6 items-start justify-between inset-0 h-full mx-auto"
-      >
-        <div className="w-full md:w-1/2 text-center md:text-left text-titleCol flex flex-col gap-y-8">
+
+
+      <div className="flex absolute px-4 md:px-28 items-start justify-between inset-0 h-full mx-auto">
+        <div
+          data-scroll
+          data-scroll-speed="0.1"
+          className="w-full md:w-1/2 text-center md:text-left mt-20 text-titleCol flex flex-col gap-y-8"
+        >
           <div className="flex flex-col text-3xl uppercase">
             <span className="block mb-4 text-xs md:text-sm text-thirdCol font-medium">
-              <span className="text-xs block">About the WRF</span>
+              <span className="text-xs md:text-xl font-semibold block">
+                About the WRF
+              </span>
             </span>
-            <h3 className="font-bold text-titelCol text-7xl">{t("event")}</h3>
+            <h3 className="font-bold text-5xl">{t("event")}</h3>
           </div>
           <div className="flex flex-col gap-y-4">
             <h6 className="text-xl font-bold">
@@ -32,7 +33,7 @@ const AboutEvent = () => {
               ullam in quas nesciunt pariatur accusantium neque mollitia dolor
               dolorem?
             </h6>
-            <p className="text-md">
+            <p className="text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum
               nulla neque magni reprehenderit mollitia, atque perspiciatis amet
               vitae fugiat et asperiores sed iste saepe excepturi autem
@@ -50,7 +51,7 @@ const AboutEvent = () => {
         <div
           data-scroll
           data-scroll-speed="0.1"
-          className="hidden md:flex items-end justify-end md:w-[15rem] lg:w-[20rem] mb-[13rem] h-full"
+          className="hidden md:flex items-end justify-end md:w-[15rem] lg:w-[20rem] h-full"
         >
           <p className="text-secCol font-bold">
             The event organiser is ADDA VIVA INDOMITA VALTELLINA RIVER, the
@@ -60,7 +61,7 @@ const AboutEvent = () => {
       </div>
       <div className="hidden md:flex items-center justify-end w-full h-full">
         <Image
-          className="h-[80vh] md:w-[43rem] lg:w-[53rem]"
+          className="h-[90vh] md:w-[43rem] lg:w-[53rem]"
           src={Section2}
           alt=""
         />

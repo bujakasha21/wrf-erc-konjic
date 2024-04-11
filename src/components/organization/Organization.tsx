@@ -6,12 +6,14 @@ import { useTranslations } from "next-intl";
 const Organization = () => {
   const t = useTranslations("Organization");
   return (
-    <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-start gap-8 max-w-6xl mx-auto">
-      <div>
-        <span className="block mb-4 text-xs md:text-sm text-thirdCol font-medium">
+    <section className="w-full px-14 py-12 grid grid-cols-1 md:grid-cols-2 items-start gap-8 max-w-6xl mx-auto my-20">
+      <div data-scroll data-scroll-speed="0.1">
+        <span className="block mb-4 text-xs md:text-lg text-thirdCol font-semibold uppercase">
           Better every day
         </span>
-        <h3 className="font-bold text-secCol text-6xl">{t("org")}</h3>
+        <h3 className="font-bold text-titleCol text-5xl uppercase">
+          {t("org")}
+        </h3>
         <p className="text-md my-5">
           A large number of young and very young Indomita members have obtained
           excellent results in regional and national competitions. Over 30

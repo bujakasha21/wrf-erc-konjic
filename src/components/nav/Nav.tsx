@@ -13,6 +13,7 @@ import NavMenuBackground from "./NavMenuBackground";
 import BurgerButton from "./BurgerButton";
 
 import Logo from "@/assets/logo.png";
+import ChangeLanguage from "../utils/ChangeLanguage";
 
 const Nav = () => {
   const pathname = usePathname();
@@ -32,7 +33,7 @@ const Nav = () => {
   return (
     <nav className={`fixed w-full z-[50]`}>
       <motion.div
-        className="flex items-center  justify-center uppercase"
+        className="flex items-center justify-center uppercase"
         variants={animations.color}
         initial="initial"
         animate={isActive ? "open" : "closed"}

@@ -10,6 +10,7 @@ export const navbarList = [
   { name: "Event", href: "/", image: nav2 },
   { name: "Lokacija", href: "/", image: nav3 },
   { name: "Sponzori", href: "/", image: nav4 },
-  { name: "Informacije", href: "/", image: nav5 },
+  { name: "Informacije", href: "tehnical-informations", image: nav5 },
   { name: "Kontakt", href: "contact", image: nav6 },
+
 ];
