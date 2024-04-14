@@ -10,7 +10,7 @@ import headerPhoto from "@/assets/header1.jpg";
 const HeroSection = () => {
   const t = useTranslations("Header");
   return (
-    <section className="w-full relative   overflow-hidden">
+    <section className="w-full relative overflow-hidden">
       <div className="flex absolute px-4 md:px-28 items-center inset-0 h-full mx-auto">
         <div
           data-scroll
@@ -18,11 +18,14 @@ const HeroSection = () => {
           className="w-full md:w-1/2 text-center md:text-left text-white flex flex-col gap-y-8"
         >
           <div className="font-bold">
-            <span className="block mb-4 text-xs xl:text-xl text-thirdCol font-medium ">
+            <span className="block mb-4 text-xs md:text-xl text-thirdCol font-semibold uppercase">
               {t("event")}
-              <span className="text-xs xl:text-sm block"> {t("date")}</span>
+              <span className="text-xs lg:text-base font-normal block normal-case">
+                {" "}
+                {t("date")}
+              </span>
             </span>
-            <h3 className="font-bold text-white text-lg xl:text-6xl uppercase">
+            <h3 className="font-bold text-white text-lg md:text-5xl uppercase">
               {t("header")}
             </h3>
           </div>

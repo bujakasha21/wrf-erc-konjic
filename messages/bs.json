@@ -51,5 +51,11 @@
   },
   "Gallery": {
     "title": "Gdje se Bosna sastaje s Hercegovinom"
+  },
+
+  "Contact": {
+    "contact": "Kontaktiraj nas",
+    "header": "Nešto vam je nejasno? Slobodno nas kontaktirajte.",
+    "description": "Ako imate bilo kakav problem s prijavom ili vam je nešto nejasno, ne ustručavajte se da nas kontaktirate. Popunite formu ispod i šaljemo vam mail sa traženim odgovorima."
   }
 }

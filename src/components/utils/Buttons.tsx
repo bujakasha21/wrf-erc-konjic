@@ -14,7 +14,7 @@ const Button: FC<ButtonProps> = ({ onClick, children, colorType = "dark" }) => {
   return (
     <button
       onClick={onClick}
-      className={`relative group px-8 h-14 ${bgCol}
+      className={`relative group px-8 h-12 ${bgCol}
     before:absolute 
     before:inset-0 
     before:bg-mainColor
@@ -24,6 +24,7 @@ const Button: FC<ButtonProps> = ({ onClick, children, colorType = "dark" }) => {
     before:duration-300
     hover:before:scale-x-100
     hover:before:origin-left
+    rounded-full
     `}
     >
       <span className={`relative uppercase text-base text-white`}>

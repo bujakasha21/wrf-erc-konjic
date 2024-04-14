@@ -9,7 +9,7 @@ const BurgerButton: FC<NavStateProps> = ({ isActive, setIsActive }) => {
   return (
     <div
       onClick={() => setIsActive && setIsActive(!isActive)}
-      className="absolute right-0  top-4 flex items-start  gap-4 px-10 cursor-pointer"
+      className="absolute right-0 top-4 flex items-start  gap-4 px-10 cursor-pointer"
     >
       <AnimatedHamburgerButton isActive={isActive} setIsActive={setIsActive} />
       <div className="relative mt-1">
