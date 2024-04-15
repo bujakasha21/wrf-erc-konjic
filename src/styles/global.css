@@ -8,12 +8,14 @@
   outline: none;
   box-shadow: none;
   box-sizing: border-box;
+  /* border: 1px solid black; */
 }
 
 body {
   background-color: #f2f2f2;
   overflow: hidden;
 }
+
 .text-str {
   color: #fff;
   font-family: sans-serif;

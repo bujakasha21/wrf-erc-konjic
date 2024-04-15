@@ -17,14 +17,14 @@ const Nerertva = ({ children }: { children: ReactNode }) => {
   return (
     <section ref={thirdSectionRef} className="w-full ">
       <div className="flex flex-col lg:flex-row items-start justify-between px-4 py-4  xl:px-28 xl:pt-24 h-full gap-x-s8 overflow-hidden">
-        <div className="flex flex-col text-left gap-y-4 mt-10 w-[60%]">
+        <div className="flex flex-col text-left gap-y-4 mt-10 w-full xl:w-[60%]">
           {/* <Title textSize="text-3xl" translation="Neretva" /> */}
           {children}
         </div>
-        <div className="w-full h-full relative pt-20">
+        <div className="w-full h-full relative ">
           <Image
             src={neretva}
-            className="absolute w-full h-auto object-cover"
+            className="xl:absolute w-full h-auto object-cover xl:-right-[30%]"
             alt="Neretva"
           />
         </div>
