@@ -51,7 +51,7 @@ const Nav = () => {
   return (
     <nav
       ref={navRef}
-      className={`nav fixed w-full z-[50] duration-300 ease-linear overflow-hidden${
+      className={`nav fixed w-full z-[50] duration-300 ease-linear ${
         isOnTop ? "backdrop-blur-none" : "backdrop-blur-md"
       } `}
     >

@@ -24,7 +24,7 @@ export default function Home() {
       <Organization />
       <CountriesWrapper />
       <Konjic />
-      {/* <Gallery /> */}
+      <Gallery />
       <NeretvaWrapper />
       <AccommodationWrapper />
     </div>

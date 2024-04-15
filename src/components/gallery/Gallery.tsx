@@ -1,15 +1,22 @@
 "use client";
-import projects from "@/data/gallery/gallery.json";
+// import projects from "@/data/gallery/gallery.json";
+import { galleryData } from "@/data/gallery/gallery-data";
 import Card from "./Card";
 import { useScroll } from "framer-motion";
-import { useRef } from "react";
+import { useMemo, useRef } from "react";
+import { useLocale } from "next-intl";
 
 export default function Gallery() {
+  const locale = useLocale();
   const container = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ["start start", "end end"],
   });
+
+  const projects = useMemo(() => {
+    return galleryData(locale);
+  }, [locale]);
 
   return (
     <main ref={container} className="relative w-full mt-[200px]">

@@ -1,9 +1,10 @@
-import nav1 from "@/assets/nav/nav1.jpg";
-import nav2 from "@/assets/nav/nav2.jpg";
-import nav3 from "@/assets/nav/nav3.jpg";
-import nav4 from "@/assets/nav/nav4.jpg";
-import nav5 from "@/assets/nav/nav5.jpg";
-import nav6 from "@/assets/nav/nav6.jpg";
+// import nav1 from "@/assets/nav/nav1.jpg";
+import nav2 from "@/assets/nav/navbar2.png";
+import nav3 from "@/assets/nav/navbar3.png";
+import nav4 from "@/assets/nav/navbar4.png";
+import nav5 from "@/assets/nav/navbar5.png";
+import nav6 from "@/assets/nav/navbar6.png";
+import nav1 from "@/assets/nav/navbar1.png";
 
 export const navbarList = [
   { name: "Početna", href: "/", image: nav1 },
