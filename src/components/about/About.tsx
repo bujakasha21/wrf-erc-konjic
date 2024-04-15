@@ -21,7 +21,7 @@ const About = () => {
             <p className="font-light">
               We look forward to seeing you in{" "}
               <span className="font-bold">Konjic, BiH </span>
-              for the WRF Senior European Rafting Championship
+              for the ERC Senior European Rafting Championship
             </p>
           </div>
         </div>

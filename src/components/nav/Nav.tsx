@@ -71,12 +71,12 @@ const Nav = () => {
           >
             {locale === "en" ? (
               <span>
-                WRF Senior European
+                ERC Senior European
                 <br /> Rafting Championship
               </span>
             ) : (
               <span>
-                WRF Evropsko
+                ERC Evropsko
                 <br /> Rafting Prvenstvo
               </span>
             )}
@@ -85,7 +85,7 @@ const Nav = () => {
 
         {/* Logo */}
         <Link
-          className="w-[5rem] xl:w-[7rem] h-[3rem] xl:h-[4rem] relative mt-4 my-8"
+          className="w-[3rem] xl:w-[4.5rem] h-[3rem] xl:h-[4.5rem] relative mt-4 my-8"
           href="/"
         >
           <AnimatePresence mode="wait">

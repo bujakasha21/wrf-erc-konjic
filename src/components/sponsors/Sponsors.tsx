@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import riverGuide from "@/assets/riverguide.png";
-import Logo2 from "@/assets/logo2.png";
+import Logo2 from "@/assets/logo.png";
 import wrf from "@/assets/logo_wrf_white.png";
 import konjic from "@/assets/logo-komplet-removebg-preview – kopija.png";
 import gardenLogo from "@/assets/gardenLogo.png";
