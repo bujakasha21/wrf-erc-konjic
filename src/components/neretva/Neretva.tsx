@@ -11,9 +11,9 @@ const Nerertva = ({ children }: { children: ReactNode }) => {
   const thirdSectionRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: thirdSectionRef,
-    offset: ["start end", "end start"],
+    offset: ["-100px end", "end start"],
   });
-  const height = useTransform(scrollYProgress, [0, 1], [80, 0]);
+  const height = useTransform(scrollYProgress, [0, 1], [100, 0]);
   return (
     <section ref={thirdSectionRef} className="w-full ">
       <div className="flex flex-col lg:flex-row items-start justify-between px-4 py-4  xl:px-28 xl:pt-24 h-full gap-x-s8 overflow-hidden">
@@ -30,10 +30,8 @@ const Nerertva = ({ children }: { children: ReactNode }) => {
         </div>
       </div>
       <motion.div
-        className="relative  w-full z-[20] hidden xl:block"
+        className="relative w-full z-[20] hidden xl:block"
         style={{ height }}
-        data-scroll
-        data-scroll-speed="0.01"
       >
         <div className="h-[1550%] w-[120%] bg-[#f2f2f2] -left-[10%] z-1 absolute inset-0 rounded-b-full shadow-xl "></div>
       </motion.div>
