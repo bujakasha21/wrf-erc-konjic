@@ -16,7 +16,7 @@ const Nerertva = ({ children }: { children: ReactNode }) => {
   const height = useTransform(scrollYProgress, [0, 1], [80, 0]);
   return (
     <section ref={thirdSectionRef} className="w-full ">
-      <div className="flex flex-col lg:flex-row items-start justify-between px-4 py-4  xl:px-28 xl:pt-24 h-full gap-x-s8 overflow-hidden">
+      <div className="flex flex-col lg:flex-row items-start justify-between px-4 py-4 xl:px-28 xl:pt-24 h-full gap-x-s8 overflow-hidden">
         <div className="flex flex-col text-left gap-y-4 mt-10 w-full xl:w-[60%]">
           {/* <Title textSize="text-3xl" translation="Neretva" /> */}
           {children}
@@ -30,7 +30,7 @@ const Nerertva = ({ children }: { children: ReactNode }) => {
         </div>
       </div>
       <motion.div
-        className="relative mt-[100px]  w-full z-[20] hidden xl:block"
+        className="relative w-full -mt-3 z-[20] hidden xl:block"
         style={{ height }}
         data-scroll
         data-scroll-speed="0.01"
