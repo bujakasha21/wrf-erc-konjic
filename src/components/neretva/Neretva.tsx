@@ -20,8 +20,6 @@ const Nerertva = ({ children }: { children: ReactNode }) => {
         <div className="flex flex-col text-left gap-y-4 mt-10 w-[60%]">
           {/* <Title textSize="text-3xl" translation="Neretva" /> */}
           {children}
-          <p className="text-md my-5">22</p>
-          <p className="text-md">22</p>
         </div>
         <div className="w-full h-full  relative ">
           <Image

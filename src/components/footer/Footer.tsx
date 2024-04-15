@@ -1,16 +1,19 @@
 "use client";
 import { useScroll, motion, useTransform } from "framer-motion";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import WhiteLogo from "@/assets/logo-white.png";
 import Image from "next/image";
-import { navbarList } from "@/data/nav/nav";
-import Button from "../utils/Buttons";
+import { navbarList, navbarList2 } from "@/data/nav/nav";
+
 import { useLocale } from "next-intl";
 import Magnetic from "../utils/Magnetic";
 
 function Footer() {
   const locale = useLocale();
+  const navList = useMemo(() => {
+    return navbarList2(locale);
+  }, [locale]);
   const [isHovered, setIsHovered] = useState({
     fb: false,
     ins: false,
@@ -35,24 +38,24 @@ function Footer() {
         className=" w-full px-4 text-textColor flex flex-col"
         style={{ opacity }}
       >
-
         <div className="flex justify-between">
           <div className="w-full text-6xl font-bold">
-            <h2 className="w-full md:w-4/5 text-white">
-              Join us at
-              <br /> WRF SENIOR EUROPEAN CHAMPIONSHIP 2024!
+            <h2 className="w-full md:w-4/5 text-white uppercase">
+              {locale === "en" ? (
+                <span>
+                  {" "}
+                  Join us at
+                  <br /> WRF SENIOR EUROPEAN CHAMPIONSHIP 2024!
+                </span>
+              ) : (
+                <span>
+                  {" "}
+                  Pridružite nam se
+                  <br /> WRF Evropskom Rafting Prvenstvu
+                </span>
+              )}
             </h2>
-
           </div>
-
-          <Magnetic>
-            {/* <MotionButton name="REZERVISI" onClick={() => console.log("first")} /> */}
-            <Button py="py-[4rem]" px="px-[3rem] text-xl relative">
-              <Link href="/" className="">
-                Saznaj više
-              </Link>
-            </Button>
-          </Magnetic>
         </div>
         <div className="flex flex-col">
           <div className="flex mt-24 mb-12 flex-row justify-between items-center">
@@ -64,7 +67,7 @@ function Footer() {
               />
             </div>
             <div className="flex items-center gap-4">
-              {navbarList.map(({ name, href }, i) => {
+              {navList.map(({ name, href }, i) => {
                 return (
                   <Magnetic key={i + href + name}>
                     <Link
@@ -167,7 +170,6 @@ function Footer() {
 
           <p className="w-full text-center mt-12 text-white">
             Copyright © 2024 <Link href="https://mmu.ba">MMU</Link>
-
           </p>
         </div>
       </motion.div>

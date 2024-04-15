@@ -1,4 +1,12 @@
 {
+  "Navbar": {
+    "title": "10-15. juni, Konjic, Bosna i Hercegovina",
+    "event": "Evropsko Prvenstvo u Raftingu 2024",
+    "header": "Doživite uzbuđenje s elitom evropskog raftinga!",
+    "desc1": "Osjetite puls evropske rafting scene u bujnim pejzažima ",
+    "descbold": "Konjica.",
+    "desc2": " Budite svjedoci drame, takmičenja i čiste radosti raftinga u jednoj od najzahtjevnijih prirodnih arena."
+  },
   "Header": {
     "date": "June 10-15, Konjic, Bosnia and Herzegovina",
     "event": "Europe Rafting Championship 2024",

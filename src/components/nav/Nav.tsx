@@ -14,8 +14,11 @@ import BurgerButton from "./BurgerButton";
 
 import Logo from "@/assets/logo.png";
 import ChangeLanguage from "../utils/ChangeLanguage";
+import { useLocale } from "next-intl";
 
 const Nav = () => {
+  const locale = useLocale();
+
   const pathname = usePathname();
   const navRef = useRef(null);
   const [isActive, setIsActive] = useState<boolean>(false);
@@ -66,8 +69,17 @@ const Nav = () => {
               !isActive ? "text-white" : "text-textColor"
             }`}
           >
-            WRF Senior European
-            <br /> Rafting Championship
+            {locale === "en" ? (
+              <span>
+                WRF Senior European
+                <br /> Rafting Championship
+              </span>
+            ) : (
+              <span>
+                WRF Evropsko
+                <br /> Rafting Prvenstvo
+              </span>
+            )}
           </h1>
         </div>
         {/* Logo */}

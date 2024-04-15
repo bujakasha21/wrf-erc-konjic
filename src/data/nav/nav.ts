@@ -13,3 +13,30 @@ export const navbarList = [
   { name: "Lokacija", href: "/#lokacija", image: nav5 },
   { name: "Kontakt", href: "/contact", image: nav6 },
 ];
+
+export const navbarList2 = (locale: string) => {
+  return [
+    { name: locale === "en" ? "Home" : "Početna", href: "/", image: nav1 },
+    { name: "Event", href: "/event", image: nav2 },
+    {
+      name: locale === "en" ? "Sponsors" : "Sponzori",
+      href: "/sponzori",
+      image: nav3,
+    },
+    {
+      name: locale === "en" ? "Ifnormations" : "Informacije",
+      href: "/informacije",
+      image: nav4,
+    },
+    {
+      name: locale === "en" ? "Location" : "Lokacija",
+      href: "/#lokacija",
+      image: nav5,
+    },
+    {
+      name: locale === "en" ? "Contact" : "Kontakt",
+      href: "/contact",
+      image: nav6,
+    },
+  ];
+};
