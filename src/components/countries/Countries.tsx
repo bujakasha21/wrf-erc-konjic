@@ -21,9 +21,9 @@ const Countries = () => {
   });
 
   const tranforms: Transforms = {
-    y1: useTransform(scrollYProgress, [0, 1], [0, -height * 1.5]),
+    y1: useTransform(scrollYProgress, [0, 1], [0, -height * 2]),
     y2: useTransform(scrollYProgress, [0, 1], [0, height * 1]),
-    y3: useTransform(scrollYProgress, [0, 1], [0, -height * 1.5]),
+    y3: useTransform(scrollYProgress, [0, 1], [0, -height * 2]),
   };
 
   const { countryCodes } = countries;
@@ -36,7 +36,7 @@ const Countries = () => {
   return (
     <div
       ref={ref}
-      className="h-[100vh] flex w-full gap-[2vw] justify-center overflow-hidden "
+      className="h-[50vh] xl:h-[100vh] flex w-full gap-[2vw] justify-center overflow-hidden "
     >
       {Array.from({ length: numberOfColumns }).map((_, columnIndex) => {
         const motionValue = tranforms[`y${columnIndex + 1}`];

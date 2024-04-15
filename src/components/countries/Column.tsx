@@ -22,7 +22,7 @@ const Column: FC<ColumnProps> = ({ start, end, countryCodes, motionValue }) => {
   return (
     <motion.div
       className={`w-[30vw] h-full flex flex-col gap-4 min-w-[100px] relative  ${
-        start === 6 && "-top-[50%]"
+        start === 6 && "-top-[100%] xl:-top-[50%]"
       }`}
       style={{ y: motionValue }}
     >
