@@ -20,12 +20,10 @@ const AboutEvent = () => {
           className="w-full md:w-1/2 text-center md:text-left mt-20 text-titleCol flex flex-col gap-y-8"
         >
           <div className="flex flex-col text-3xl">
-            <span className="text-xs md:text-sm text-thirdCol font-medium">
-              <span className="text-xs md:text-md font-semibold block uppercase">
-                {t("title")}
-              </span>
+            <span className="text-xs md:text-xl text-thirdCol font-semibold block uppercase">
+              {t("title")}
             </span>
-            <h3 className="font-bold text-6xl uppercase">{t("event")}</h3>
+            <h3 className="font-bold text-5xl uppercase">{t("event")}</h3>
           </div>
           <div className="flex flex-col gap-y-4">
             <h6 className="text-xl font-bold">{t("desc1")}</h6>

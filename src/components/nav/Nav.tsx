@@ -13,6 +13,7 @@ import NavMenuBackground from "./NavMenuBackground";
 import BurgerButton from "./BurgerButton";
 
 import Logo from "@/assets/logo.png";
+import ChangeLanguage from "../utils/ChangeLanguage";
 
 const Nav = () => {
   const pathname = usePathname();
@@ -45,12 +46,14 @@ const Nav = () => {
     });
   }, []);
   return (
+
     <nav
       ref={navRef}
       className={`nav fixed w-full z-[50] duration-300 ease-linear ${
         isOnTop ? "backdrop-blur-none" : "backdrop-blur-md"
       } `}
     >
+
       <motion.div
         className={`flex items-center justify-center uppercase`}
         variants={animations.color}
@@ -58,6 +61,7 @@ const Nav = () => {
         animate={isActive ? "open" : "closed"}
       >
         {/* Title */}
+
         <div className="absolute top-4 left-0 px-10">
           <h1
             className={`text-xl font-bold ${
@@ -66,6 +70,7 @@ const Nav = () => {
           >
             WRF Senior European
             <br /> Rafting Championship
+
           </h1>
         </div>
         {/* Logo */}
@@ -103,6 +108,9 @@ const Nav = () => {
           </AnimatePresence>
         </Link>
         <BurgerButton setIsActive={setIsActive} isActive={isActive} />
+        <div>
+          <ChangeLanguage />
+        </div>
       </motion.div>
       <NavMenuBackground isActive={isActive} />
       <AnimatePresence mode="wait">

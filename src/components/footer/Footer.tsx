@@ -35,12 +35,14 @@ function Footer() {
         className=" w-full px-4 text-textColor flex flex-col"
         style={{ opacity }}
       >
+
         <div className="flex justify-between">
           <div className="w-full text-6xl font-bold">
             <h2 className="w-full md:w-4/5 text-white">
               Join us at
               <br /> WRF SENIOR EUROPEAN CHAMPIONSHIP 2024!
             </h2>
+
           </div>
 
           <Magnetic>
@@ -162,8 +164,10 @@ function Footer() {
             </div>
           </div>
           <hr className="border-thirdCol" />
+
           <p className="w-full text-center mt-12 text-white">
             Copyright © 2024 <Link href="https://mmu.ba">MMU</Link>
+
           </p>
         </div>
       </motion.div>
