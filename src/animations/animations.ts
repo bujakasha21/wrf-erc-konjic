@@ -44,14 +44,14 @@ export const navBackgroundHeight = {
 
 export const color = {
   initial: {
-    backgroundColor: "rgba(255, 255, 255, 0)",
+    backgroundColor: "rgba(255, 255, 255, 0.0)",
   },
   open: {
     backgroundColor: "rgba(255, 255, 255, 1)",
     transition: { ...transition, duration: 0 },
   },
   closed: {
-    backgroundColor: "rgba(255, 255, 255, 0)",
+    backgroundColor: "rgba(255, 255, 255, 0.0)",
     transition: { ...transition, delay: 0.75 },
   },
 };

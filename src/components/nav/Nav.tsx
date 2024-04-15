@@ -14,8 +14,11 @@ import BurgerButton from "./BurgerButton";
 
 import Logo from "@/assets/logo.png";
 import ChangeLanguage from "../utils/ChangeLanguage";
+import { useLocale } from "next-intl";
 
 const Nav = () => {
+  const locale = useLocale();
+
   const pathname = usePathname();
   const navRef = useRef(null);
   const [isActive, setIsActive] = useState<boolean>(false);
@@ -46,14 +49,12 @@ const Nav = () => {
     });
   }, []);
   return (
-
     <nav
       ref={navRef}
       className={`nav fixed w-full z-[50] duration-300 ease-linear ${
         isOnTop ? "backdrop-blur-none" : "backdrop-blur-md"
       } `}
     >
-
       <motion.div
         className={`flex items-center justify-center uppercase`}
         variants={animations.color}
@@ -68,9 +69,17 @@ const Nav = () => {
               !isActive ? "text-white" : "text-textColor"
             }`}
           >
-            WRF Senior European
-            <br /> Rafting Championship
-
+            {locale === "en" ? (
+              <span>
+                WRF Senior European
+                <br /> Rafting Championship
+              </span>
+            ) : (
+              <span>
+                WRF Evropsko
+                <br /> Rafting Prvenstvo
+              </span>
+            )}
           </h1>
         </div>
         {/* Logo */}
@@ -107,10 +116,8 @@ const Nav = () => {
             )}
           </AnimatePresence>
         </Link>
+        <ChangeLanguage isActive={isActive} />
         <BurgerButton setIsActive={setIsActive} isActive={isActive} />
-        <div>
-          <ChangeLanguage />
-        </div>
       </motion.div>
       <NavMenuBackground isActive={isActive} />
       <AnimatePresence mode="wait">

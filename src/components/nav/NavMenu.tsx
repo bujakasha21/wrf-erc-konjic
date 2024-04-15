@@ -1,7 +1,5 @@
-"use client";
-
 import { FC } from "react";
-import { navbarList } from "@/data/nav/nav";
+import { navbarList, navbarList2 } from "@/data/nav/nav";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import * as animations from "@/animations/animations";
@@ -18,6 +16,7 @@ interface NavMenuProps {
 
 const NavMenu: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
   const locale = useLocale();
+
   const getChar = (title: string) => {
     return title.split("").map((char, index) => (
       <motion.span
@@ -34,6 +33,8 @@ const NavMenu: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
     ));
   };
 
+  const navlist = navbarList2(locale);
+
   return (
     <motion.div
       className="absolute overflow-hidden z-20 bg-white"
@@ -45,7 +46,7 @@ const NavMenu: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
       <div className="uppercase font-medium px-8 py-2">
         <div className="w-full h-full flex items-center justify-between">
           <div className="flex flex-wrap gap-8 w-1/2">
-            {navbarList.map(({ name, href }, i) => {
+            {navlist.map(({ name, href }, i) => {
               return (
                 <Link
                   onMouseOver={() =>

@@ -1,9 +1,7 @@
 "use client";
 import axios from "axios";
-import Image from "next/image";
+
 import React, { useState } from "react";
-import Section2 from "@/assets/about1.jpg";
-import Button from "./utils/Buttons";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

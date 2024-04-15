@@ -1,10 +1,6 @@
 import { useTranslations } from "next-intl";
 import Nerertva from "./Neretva";
 
-interface NeretvaWrapperProps {
-  children: React.ReactNode;
-}
-
 const NeretvaWrapper = () => {
   const t = useTranslations("Neretva");
   return (
@@ -17,6 +13,8 @@ const NeretvaWrapper = () => {
             </span>
           </span>
           <h3 className={`font-bold text-6xl uppercase`}>{t("event")}</h3>
+          <p className="text-md my-5">{t("desc1")}</p>
+          <p className="text-md">{t("desc2")}</p>
         </div>
       </Nerertva>
     </>
