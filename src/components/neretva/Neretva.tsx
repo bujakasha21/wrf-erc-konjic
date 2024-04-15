@@ -3,9 +3,8 @@ import Image from "next/image";
 import React, { ReactNode, useRef } from "react";
 
 import neretva from "@/assets/city/neretva.jpg";
-import { useTranslations } from "next-intl";
+
 import { motion, useScroll, useTransform } from "framer-motion";
-import Title from "../utils/Title";
 
 const Nerertva = ({ children }: { children: ReactNode }) => {
   const thirdSectionRef = useRef<HTMLDivElement | null>(null);
