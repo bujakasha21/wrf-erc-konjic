@@ -1,9 +1,9 @@
 import { useLocale } from "next-intl";
-import Image from "next/image";
+
 import { useRouter } from "next/navigation";
 import React, { ChangeEvent, useTransition } from "react";
 
-export default function ChangeLanguage() {
+export default function ChangeLanguage({ isActive }: { isActive: boolean }) {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const activeLocal = useLocale();
@@ -16,29 +16,21 @@ export default function ChangeLanguage() {
   };
 
   return (
-    <div className="ml-10">
+    <div className="ml-20">
       <label className="rounded">
         <select
-          className="text-white text-xl font-semibold bg-transparent cursor-pointer"
+          className={`${
+            !isActive ? "text-white" : "text-textColor"
+          } text-xl  bg-transparent cursor-pointer duration-500 ease-linear font-thin`}
           defaultValue={activeLocal}
           onChange={onSelectChange}
           disabled={isPending}
         >
-          <option className="text-black" value="bs">
-            <Image
-              src={`https://flagcdn.com/256x192/bs.webp`}
-              width={50}
-              height={50}
-              alt="Bosnian"
-            />
+          <option className="text-textColor" value="bs">
+            <div className="w-full h-full">BS</div>
           </option>
-          <option className="text-black" value="en">
-            <Image
-              src={`https://flagcdn.com/256x192/en.webp`}
-              width={50}
-              height={50}
-              alt="English"
-            />
+          <option className="text-textColor" value="en">
+            EN
           </option>
         </select>
       </label>

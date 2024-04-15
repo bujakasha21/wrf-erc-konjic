@@ -104,7 +104,7 @@ const Nav = () => {
             )}
           </AnimatePresence>
         </Link>
-        <ChangeLanguage />
+        <ChangeLanguage isActive={isActive} />
         <BurgerButton setIsActive={setIsActive} isActive={isActive} />
       </motion.div>
       <NavMenuBackground isActive={isActive} />
