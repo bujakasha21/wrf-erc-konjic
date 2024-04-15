@@ -12,12 +12,16 @@ const ContactHeading = () => {
         data-scroll-speed="0.2"
         className="absolute w-full md:w-2/3 px-4 md:px-28 flex flex-col text-left md:items-start justify-center pt-60"
       >
-        <span className="block mb-4 text-base md:text-lg text-thirdCol font-semibold uppercase">
-          {t("contact")}
+        <span className="text-xs md:text-sm text-thirdCol font-medium text-left">
+          <span className="text-xs md:text-md font-semibold block uppercase ">
+            {t("contact")}
+          </span>
         </span>
-        <h1 className="text-3xl md:text-5xl font-bold uppercase text-white">
+        <h3
+          className={`font-bold text-3xl xl:text-6xl uppercase text-left text-white`}
+        >
           {t("header")}
-        </h1>
+        </h3>
         <p className="text-base md:text-xl py-5 text-white">
           {t("description")}
         </p>

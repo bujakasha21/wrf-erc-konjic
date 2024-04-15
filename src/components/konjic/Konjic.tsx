@@ -2,7 +2,7 @@ import React from "react";
 
 import konjic from "@/assets/city/konjic.jpg";
 import Image from "next/image";
-import Title from "../utils/Title";
+
 import { useTranslations } from "next-intl";
 import Map from "../Map";
 
