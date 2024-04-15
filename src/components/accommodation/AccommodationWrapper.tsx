@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Button from "../utils/Buttons";
 import Accommodation from "./Accommodation";
+import Link from "next/link";
 
 export default function AccommodationWrapper() {
   const t = useTranslations("Accommodation");
@@ -28,7 +29,9 @@ export default function AccommodationWrapper() {
         </div>
         <Magnetic>
           <Button py="py-[3.5rem]" px="px-[3rem] text-md">
-            <span>{t("btn")}</span>
+            <Link target="_blank" href="https://nova.gardencity.ba/">
+              {t("btn")}
+            </Link>
           </Button>
         </Magnetic>
       </div>
