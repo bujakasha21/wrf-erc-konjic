@@ -1,7 +1,6 @@
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import React, { ChangeEvent, useTransition } from "react";
-import { start } from "repl";
 
 export default function ChangeLanguage() {
   const [isPending, startTransition] = useTransition();
@@ -15,7 +14,7 @@ export default function ChangeLanguage() {
     });
   };
   return (
-    <label className="rounded ">
+    <label className="rounded">
       <select
         className="text-secCol text-xl font-semibold bg-transparent"
         defaultValue={activeLocal}
