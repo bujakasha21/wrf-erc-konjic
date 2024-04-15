@@ -36,7 +36,7 @@ const Countries = () => {
   return (
     <div
       ref={ref}
-      className="h-[100vh] flex w-full gap-[2vw] justify-center overflow-hidden "
+      className="h-[60vh] md:h-[100vh] flex w-full gap-[2vw] justify-center overflow-hidden "
     >
       {Array.from({ length: numberOfColumns }).map((_, columnIndex) => {
         const motionValue = tranforms[`y${columnIndex + 1}`];
