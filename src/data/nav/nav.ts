@@ -24,7 +24,7 @@ export const navbarList2 = (locale: string) => {
       image: nav3,
     },
     {
-      name: locale === "en" ? "Ifnormations" : "Informacije",
+      name: locale === "en" ? "Informations" : "Informacije",
       href: "/informacije",
       image: nav4,
     },

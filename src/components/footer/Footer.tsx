@@ -43,13 +43,11 @@ function Footer() {
             <h2 className="w-full md:w-4/5 text-white uppercase">
               {locale === "en" ? (
                 <span>
-                  {" "}
                   Join us at
                   <br /> WRF SENIOR EUROPEAN CHAMPIONSHIP 2024!
                 </span>
               ) : (
                 <span>
-                  {" "}
                   Pridružite nam se
                   <br /> WRF Evropskom Rafting Prvenstvu
                 </span>
