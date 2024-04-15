@@ -31,13 +31,16 @@ const Column: FC<ColumnProps> = ({ start, end, countryCodes, motionValue }) => {
       style={{ y: motionValue }}
     >
       {countryFlags.map(({ src, alt }, index) => (
-        <div key={index} className="w-full h-fullrelative shadow-md">
+        <div
+          key={index}
+          className="w-full h-full relative shadow-md rounded-md"
+        >
           <Image
             src={germany}
             alt={alt}
             width={300}
             height={500}
-            className="w-full h-[20rem]"
+            className="w-full h-[20rem] rounded-md"
             loading="lazy"
             // className={`object-cover h-auto w-full`}
           />

@@ -59,7 +59,7 @@ const NavMenu: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
                   className="overflow-hidden"
                 >
                   <motion.p
-                    className="flex text-4xl font-bold"
+                    className="flex text-4xl font-thin"
                     variants={animations.blur}
                     initial="inital"
                     animate={
@@ -75,15 +75,22 @@ const NavMenu: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
             })}
           </div>
           <motion.div
-            className="w-[30rem] h-[30rem] relative"
+            className="w-[40rem] h-[20rem] relative rounded-md"
             variants={animations.opacity}
             initial="inital"
-            animate={selectedLink.isActive ? "open" : "closed"}
+            animate={
+              selectedLink.index === 0
+                ? "open"
+                : selectedLink.isActive
+                ? "open"
+                : "closed"
+            }
           >
             <Image
               src={navbarList[selectedLink.index].image}
               alt="Nav image"
               fill={true}
+              className="rounded-md"
             />
           </motion.div>
         </div>

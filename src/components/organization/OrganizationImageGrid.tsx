@@ -25,14 +25,14 @@ const OrganizationImageGrid = () => {
     <div
       data-scroll
       data-scroll-speed="0.2"
-      className="grid grid-cols-3 grid-rows-4 h-[450px] gap-1"
+      className="grid grid-cols-3 grid-rows-4 h-[450px] gap-1 rounded-md"
     >
       {squares.map((sq) => (
         <motion.div
           key={sq.id}
           layout
           transition={{ duration: 1.5, type: "spring" }}
-          className="w-full h-full"
+          className="w-full h-full rounded-md"
           style={{
             backgroundImage: `url(${sq.src.src})`,
             backgroundSize: "cover",

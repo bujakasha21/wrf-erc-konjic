@@ -1,22 +1,44 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { ReactNode, useRef } from "react";
 
 import neretva from "@/assets/city/neretva.jpg";
 import { useTranslations } from "next-intl";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Title from "../utils/Title";
 
-const Nerertva = () => {
-  const t = useTranslations("Neretva");
+const Nerertva = ({ children }: { children: ReactNode }) => {
+  const thirdSectionRef = useRef<HTMLDivElement | null>(null);
+  const { scrollYProgress } = useScroll({
+    target: thirdSectionRef,
+    offset: ["start end", "end start"],
+  });
+  const height = useTransform(scrollYProgress, [0, 1], [80, 0]);
   return (
-    <section className="w-full overflow-hidden">
-      <div className="flex flex-col lg:flex-row items-start justify-between px-28 py-24 h-full gap-x-8">
-        <Image height={800} width={800} src={neretva} alt="Neretva" />
-        <div className="flex flex-col text-left gap-y-4 mt-10 w-[70%]">
-          <Title textSize="text-3xl" translation="Neretva" />
-          <p className="text-md my-5">{t("desc1")}</p>
-          <p className="text-md">{t("desc2")}</p>
+    <section ref={thirdSectionRef} className="w-full ">
+      <div className="flex flex-col lg:flex-row items-start justify-between px-4 py-4  xl:px-28 xl:pt-24 h-full gap-x-s8 overflow-hidden">
+        <div className="flex flex-col text-left gap-y-4 mt-10 w-[60%]">
+          {/* <Title textSize="text-3xl" translation="Neretva" /> */}
+          {children}
+          <p className="text-md my-5">22</p>
+          <p className="text-md">22</p>
+        </div>
+        <div className="w-full h-full  relative ">
+          <Image
+            src={neretva}
+            className="absolute w-full h-auto object-cover  -right-[30%]"
+            alt="Neretva"
+          />
         </div>
       </div>
+      <motion.div
+        className="relative mt-[100px]  w-full z-[20]"
+        style={{ height }}
+        data-scroll
+        data-scroll-speed="0.01"
+      >
+        <div className="h-[1550%] w-[120%] bg-[#f2f2f2] -left-[10%] z-1 absolute inset-0 rounded-b-full shadow-xl "></div>
+      </motion.div>
     </section>
   );
 };

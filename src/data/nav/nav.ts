@@ -7,10 +7,9 @@ import nav6 from "@/assets/nav/nav6.jpg";
 
 export const navbarList = [
   { name: "Početna", href: "/", image: nav1 },
-  { name: "Event", href: "/", image: nav2 },
-  { name: "Lokacija", href: "/", image: nav3 },
-  { name: "Sponzori", href: "/", image: nav4 },
-  { name: "Informacije", href: "tehnical-informations", image: nav5 },
+  { name: "Event", href: "/event", image: nav2 },
+  { name: "Sponzori", href: "/sponzori", image: nav3 },
+  { name: "Informacije", href: "/informacije", image: nav4 },
+  { name: "Lokacija", href: "/#lokacija", image: nav5 },
   { name: "Kontakt", href: "contact", image: nav6 },
-
 ];

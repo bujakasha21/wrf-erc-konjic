@@ -13,7 +13,7 @@ export interface NavStateProps {
 const NavMenuBackground: FC<NavStateProps> = ({ isActive }) => {
   return (
     <motion.div
-      className="h-full w-full bg-mainColor/50 absolute z-0"
+      className="h-full w-full bg-mainColor opacity-50 absolute z-0"
       variants={animations.navBackgroundHeight}
       initial="initial"
       animate={isActive ? "open" : "closed"}
