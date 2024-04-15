@@ -38,7 +38,7 @@ const Card: FC<CardProps> = ({
   return (
     <div
       ref={container}
-      className="h-screen flex items-center justify-center sticky top-[200px]"
+      className="h-screen flex items-center justify-center sticky top-[50px] md:top-[200px]"
     >
       <motion.div
         style={{
@@ -46,15 +46,14 @@ const Card: FC<CardProps> = ({
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
-        className="relative w-[1000px] h-[1000px]  rounded-md origin-top"
+        className="relative w-[950px] h-[1000px] rounded-md origin-top"
       >
-        <h2 className="text-lg xl:text-6xl font-bold absolute top-[5%] left-[5%] xl:left-[10%] g text-str w-1/2 z-[20] opacity-80 backdrop:blur-md">
+        <h2 className="text-3xl md:text-6xl font-bold absolute top-[5%] px-10 md:-right-[7%] text-str w-1/2 z-[20] opacity-80">
           {title}
         </h2>
-        <p className="text-white absolute top-[12%] xl:top-[50%] left-[5%] xl:left-[10%] text-xs xl:text-lg z-[20] w-4/5 xl:w-1/2">
-          {description}
-        </p>
-
+        <h2 className="text-3xl md:text-6xl font-bold absolute top-[5%] px-10 md:-right-[7%] text-str2 w-1/2 z-[17]">
+          {title}
+        </h2>
         <div>
           <div className="relative w-full h-full overflow-hidden z-[18] rounded-md">
             <motion.div

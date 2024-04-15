@@ -63,7 +63,7 @@ const Nav = () => {
       >
         {/* Title */}
 
-        <div className="absolute top-4 left-0 px-10">
+        <div className="absolute top-4 left-0 px-4 md:px-10">
           <h1
             className={`text-xl font-bold hidden xl:block ${
               !isActive ? "text-white" : "text-textColor"

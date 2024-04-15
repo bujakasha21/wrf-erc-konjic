@@ -18,7 +18,7 @@ export default function AccommodationWrapper() {
           <h2 className="text-4xl xl:text-8xl uppercase text-white font-bold z-[30]  ">
             {t("title")}
           </h2>
-          <p className="font-thin text-lg text-white  my-8">{t("event")}</p>
+          <p className="font-thin text-lg text-white my-8">{t("event")}</p>
         </div>
         <div className="w-full h-full relative -translate-x-12 xl:translate-x-0">
           <Image

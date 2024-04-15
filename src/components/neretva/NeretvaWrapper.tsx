@@ -4,7 +4,7 @@ import Nerertva from "./Neretva";
 const NeretvaWrapper = () => {
   const t = useTranslations("Neretva");
   return (
-    <>
+    <div className="flex md:flex-row flex-col">
       <Nerertva>
         <div className="flex flex-col">
           <span className="text-xs md:text-sm text-thirdCol font-medium ">
@@ -20,7 +20,7 @@ const NeretvaWrapper = () => {
           <p className="text-md">{t("desc2")}</p>
         </div>
       </Nerertva>
-    </>
+    </div>
   );
 };
 
