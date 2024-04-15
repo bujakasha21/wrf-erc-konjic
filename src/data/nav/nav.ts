@@ -18,10 +18,10 @@ export const navbarList = [
 export const navbarList2 = (locale: string) => {
   return [
     { name: locale === "en" ? "Home" : "Početna", href: "/", image: nav1 },
-    { name: "Event", href: "/event", image: nav2 },
+    { name: "Event", href: "/#event", image: nav2 },
     {
       name: locale === "en" ? "Sponsors" : "Sponzori",
-      href: "/sponzori",
+      href: "/#sponzori",
       image: nav3,
     },
     {
