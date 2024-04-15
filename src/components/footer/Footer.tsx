@@ -39,7 +39,7 @@ function Footer() {
         style={{ opacity }}
       >
         <div className="flex justify-between">
-          <div className="w-full text-6xl font-bold">
+          <div className="w-full text-4xl xl:text-6xl font-bold">
             <h2 className="w-full md:w-4/5 text-white uppercase">
               {locale === "en" ? (
                 <span>
@@ -113,7 +113,8 @@ function Footer() {
                   onMouseLeave={() => {
                     setIsHovered((prev) => ({ ...prev, ins: false }));
                   }}
-                  href="#"
+                  href="https://www.instagram.com/raftingbih.ba"
+                  target="_blank"
                 >
                   <svg
                     width="16"

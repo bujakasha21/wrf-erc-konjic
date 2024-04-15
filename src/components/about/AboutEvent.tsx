@@ -23,10 +23,14 @@ const AboutEvent = () => {
           className="w-full md:w-1/2 text-center md:text-left mt-20 text-titleCol flex flex-col gap-y-8"
         >
           <div className="flex flex-col">
-            <span className="text-base md:text-xl text-thirdCol font-semibold block uppercase">
-              {t("title")}
+            <span className="text-xs md:text-sm text-thirdCol font-medium text-left">
+              <span className="text-xs md:text-md font-semibold block uppercase ">
+                {t("title")}
+              </span>
             </span>
-            <h3 className="font-bold text-3xl md:text-5xl uppercase">
+            <h3
+              className={`font-bold text-3xl xl:text-6xl uppercase text-left`}
+            >
               {t("event")}
             </h3>
           </div>
@@ -35,9 +39,14 @@ const AboutEvent = () => {
             <p className="text-base text-textColor text-justify">
               {t("desc2")}
             </p>
-            <div className="flex items-center justify-center md:justify-start">
+            <div className="flex items-center justify-start mt-4">
               <Magnetic>
-                <Button py="py-[3.2rem]" px="px-[0rem] text-xs relative">
+                <Button
+                  px="px-0"
+                  py={`${
+                    locale === "en" ? "py-[3.5rem]" : "py-[3.2rem]"
+                  }  text-xs relative`}
+                >
                   <Link
                     href={`/${locale}/tehnical-informations`}
                     className="w-1/2 block mx-auto"

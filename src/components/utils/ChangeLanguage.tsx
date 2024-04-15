@@ -16,7 +16,7 @@ export default function ChangeLanguage({ isActive }: { isActive: boolean }) {
   };
 
   return (
-    <div className="ml-20">
+    <div className="xl:ml-20">
       <label className="rounded">
         <select
           className={`${
