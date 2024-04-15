@@ -30,7 +30,7 @@ const Nerertva = ({ children }: { children: ReactNode }) => {
         </div>
       </div>
       <motion.div
-        className="relative mt-[100px]  w-full z-[20] hidden xl:block"
+        className="relative  w-full z-[20] hidden xl:block"
         style={{ height }}
         data-scroll
         data-scroll-speed="0.01"
