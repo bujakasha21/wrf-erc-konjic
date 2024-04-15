@@ -85,8 +85,8 @@ const Card: FC<CardProps> = ({
                 src={`${src}`}
                 alt="image"
                 className="object-cover w-full h-full"
-                width={800}
-                height={800}
+                width={700}
+                height={700}
               />
             </motion.div>
           </div>

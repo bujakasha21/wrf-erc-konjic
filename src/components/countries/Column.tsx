@@ -18,11 +18,7 @@ const Column: FC<ColumnProps> = ({ start, end, countryCodes, motionValue }) => {
       alt: iso,
     }));
   }, [start, end, countryCodes]);
-  // ${
-  //   start ? "-top-[200%]" : "-top-[25%]"
-  // }
 
-  console.log(start);
   return (
     <motion.div
       className={`w-[30vw] h-full flex flex-col gap-4 min-w-[100px] relative  ${

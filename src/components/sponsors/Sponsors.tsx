@@ -30,13 +30,13 @@ const Sponsors = () => {
   }, [isInView, controls]);
 
   return (
-    <section id="#sponzori" className="w-full h-[30vh] md:h-auto py-8 md:py-24">
+    <section id="#sponzori" className="w-full py-10 md:py-24 overflow-hidden">
       <motion.div
         animate={controls}
         ref={ref}
         className="flex flex-col gap-y-14"
       >
-        <div className="flex items-center justify-evenly w-full p-10">
+        <div className="flex flex-col md:flex-row items-center justify-evenly gap-y-10 w-full p-10">
           <Link href="/">
             <Image className="w-[10rem] h-[10rem]" src={Logo2} alt="raft" />
           </Link>

@@ -39,12 +39,10 @@
     "btn2": "Events"
   },
   "Neretva": {
-    "title": "Where Ancient Bridges Span Modern Lives",
-    "event": "The Rafting Europe Championships take place in Konjic",
-    "desc1": "Nestled in the scenic heart of Bosnia and Herzegovina, Konjic embodies the true essence of a cultural crossroads. This picturesque town, framed by the rugged peaks of the Dinaric Alps and the emerald waters of the Neretva River, serves not just as a geographical gateway but as a portal to the past. Here, centuries-old traditions continue to thrive in the streets and markets, where the rich history of Bosnia and Herzegovina is reflected in every corner.",
-    "desc2": "Nestled in the scenic heart of Bosnia and Herzegovina, Konjic embodies the true essence of a cultural crossroads. This picturesque town, framed by the rugged peaks of the Dinaric Alps and the emerald waters of the Neretva River, serves not just as a geographical gateway but as a portal to the past. Here, centuries-old traditions continue to thrive in the streets and markets, where the rich history of Bosnia and Herzegovina is reflected in every corner.",
-    "btn1": "Timetable",
-    "btn2": "Events"
+    "title": "The Flowing Deity",
+    "event": "Meet River Neretva",
+    "desc1": "Neretva, according to legend called Flowing Divinity by the ancient Illyrians, stretches 230 km from its source to the Adriatic Sea. With its canyon and spectacular strait, this river offers unforgettable natural beauty. Emerging from under the Jabuka mountain, the Neretva is one of the coldest rivers in the world. The upper stream, especially the village of Glavatičevo, is an ideal place for anglers, especially fly fishing enthusiasts.",
+    "desc2": "Rafting on the Neretva is the ultimate experience in nature, providing adrenaline and refreshment at the same time. The journey from Glavatičevo to Konjic offers five hours of enjoyment in the canyon, rapids and hidden beaches. Canyonin on the Neretva is another way to enjoy its charms, offering a unique experience for two. Regardless of the activity, agencies organize tours adapted to every taste and desire."
   },
 
   "Sponsors": {
@@ -52,6 +50,11 @@
   },
   "Gallery": {
     "title": "Where Bosnia meets Herzegovina"
+  },
+  "Accommodation": {
+    "title": "Book stay",
+    "event": "Stay ahead! Book your stay at Garden City Hotel Konjic and ensure a perfect vacation during the WRF championship.",
+    "btn": "Book"
   },
   "Contact": {
     "contact": "Contact Us",

@@ -1,8 +1,7 @@
 import "@/styles/global.css";
 import LayoutWrapper from "@/components/utils/LayoutWrapper";
 import type { Metadata } from "next";
-import { unstable_setRequestLocale } from "next-intl/server";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+
 
 export const metadata: Metadata = {
   title: "WRF European Rafting Championship",
@@ -13,10 +12,7 @@ interface LocaleLayoutProps {
   children: React.ReactNode;
   params: { locale: string };
 }
-interface LocaleLayoutProps {
-  children: React.ReactNode;
-  params: { locale: string };
-}
+
 
 export default function LocaleLayout({
   children,

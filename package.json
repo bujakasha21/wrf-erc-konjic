@@ -18,7 +18,7 @@
     "horizontal-scroll": "^1.1.0",
     "locomotive-scroll": "^5.0.0-beta.11",
     "lucide-react": "^0.367.0",
-    "next": "14.1.4",
+    "next": "^14.1.4",
     "next-intl": "^3.11.1",
     "nodemailer": "^6.9.13",
     "react": "^18",

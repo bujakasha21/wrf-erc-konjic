@@ -1,12 +1,3 @@
-import Image from "next/image";
-import coverImg from "@/assets/Kopija datoteke Foto uz logotip Welcome to Konjic.jpg";
-import headerPhoto from "@/assets/rafting.png";
-import Section2 from "@/assets/about1.jpg";
-
-//lang
-
-//images
-import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import ContactHeading from "@/components/ContactHeading";
 

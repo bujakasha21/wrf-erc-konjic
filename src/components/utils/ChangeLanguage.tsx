@@ -1,9 +1,9 @@
 import { useLocale } from "next-intl";
+
 import { useRouter } from "next/navigation";
 import React, { ChangeEvent, useTransition } from "react";
-import { start } from "repl";
 
-export default function ChangeLanguage() {
+export default function ChangeLanguage({ isActive }: { isActive: boolean }) {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const activeLocal = useLocale();
@@ -14,17 +14,26 @@ export default function ChangeLanguage() {
       router.replace(`/${nextLang}`);
     });
   };
+
   return (
-    <label className="rounded ">
-      <select
-        className="text-secCol text-xl font-semibold bg-transparent"
-        defaultValue={activeLocal}
-        onChange={onSelectChange}
-        disabled={isPending}
-      >
-        <option value="bs">BS</option>
-        <option value="en">EN</option>
-      </select>
-    </label>
+    <div className="xl:ml-20">
+      <label className="rounded">
+        <select
+          className={`${
+            !isActive ? "text-white" : "text-textColor"
+          } text-xl  bg-transparent cursor-pointer duration-500 ease-linear font-thin`}
+          defaultValue={activeLocal}
+          onChange={onSelectChange}
+          disabled={isPending}
+        >
+          <option className="text-textColor" value="bs">
+            <div className="w-full h-full">BS</div>
+          </option>
+          <option className="text-textColor" value="en">
+            EN
+          </option>
+        </select>
+      </label>
+    </div>
   );
 }

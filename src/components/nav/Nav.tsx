@@ -14,8 +14,11 @@ import BurgerButton from "./BurgerButton";
 
 import Logo from "@/assets/logo.png";
 import ChangeLanguage from "../utils/ChangeLanguage";
+import { useLocale } from "next-intl";
 
 const Nav = () => {
+  const locale = useLocale();
+
   const pathname = usePathname();
   const navRef = useRef(null);
   const [isActive, setIsActive] = useState<boolean>(false);
@@ -46,16 +49,14 @@ const Nav = () => {
     });
   }, []);
   return (
-
     <nav
       ref={navRef}
-      className={`nav fixed w-full z-[50] duration-300 ease-linear ${
+      className={`nav fixed w-full z-[50] duration-300 ease-linear overflow-hidden${
         isOnTop ? "backdrop-blur-none" : "backdrop-blur-md"
       } `}
     >
-
       <motion.div
-        className={`flex items-center justify-center uppercase`}
+        className={`flex items-center justify-start xl:justify-center uppercase px-4 `}
         variants={animations.color}
         initial="initial"
         animate={isActive ? "open" : "closed"}
@@ -64,17 +65,31 @@ const Nav = () => {
 
         <div className="absolute top-4 left-0 px-10">
           <h1
-            className={`text-xl font-bold ${
+            className={`text-xl font-bold hidden xl:block ${
               !isActive ? "text-white" : "text-textColor"
             }`}
           >
-            WRF Senior European
-            <br /> Rafting Championship
-
+            {locale === "en" ? (
+              <span>
+                WRF Senior European
+                <br /> Rafting Championship
+              </span>
+            ) : (
+              <span>
+                WRF Evropsko
+                <br /> Rafting Prvenstvo
+              </span>
+            )}
           </h1>
         </div>
+        <div className="block xl:hidden">
+          <ChangeLanguage isActive={isActive} />
+        </div>
         {/* Logo */}
-        <Link className="w-[7rem] h-[4em] relative mt-4 my-8" href="/">
+        <Link
+          className="w-[5rem] xl:w-[7rem] h-[3rem] xl:h-[4rem] relative mt-4 my-8"
+          href="/"
+        >
           <AnimatePresence mode="wait">
             {isActive ? (
               <motion.div
@@ -107,10 +122,10 @@ const Nav = () => {
             )}
           </AnimatePresence>
         </Link>
-        <BurgerButton setIsActive={setIsActive} isActive={isActive} />
-        <div>
-          <ChangeLanguage />
+        <div className="hidden xl:block">
+          <ChangeLanguage isActive={isActive} />
         </div>
+        <BurgerButton setIsActive={setIsActive} isActive={isActive} />
       </motion.div>
       <NavMenuBackground isActive={isActive} />
       <AnimatePresence mode="wait">
