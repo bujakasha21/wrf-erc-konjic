@@ -51,7 +51,7 @@ export const color = {
     transition: { ...transition, duration: 0 },
   },
   closed: {
-    backgroundColor: "rgba(255, 255, 255, 0.3)",
+    backgroundColor: "rgba(255, 255, 255, 0)",
     transition: { ...transition, delay: 0.75 },
   },
 };
