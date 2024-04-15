@@ -46,14 +46,12 @@ const Nav = () => {
     });
   }, []);
   return (
-
     <nav
       ref={navRef}
       className={`nav fixed w-full z-[50] duration-300 ease-linear ${
         isOnTop ? "backdrop-blur-none" : "backdrop-blur-md"
       } `}
     >
-
       <motion.div
         className={`flex items-center justify-center uppercase`}
         variants={animations.color}
@@ -70,7 +68,6 @@ const Nav = () => {
           >
             WRF Senior European
             <br /> Rafting Championship
-
           </h1>
         </div>
         {/* Logo */}
@@ -107,10 +104,8 @@ const Nav = () => {
             )}
           </AnimatePresence>
         </Link>
+        <ChangeLanguage />
         <BurgerButton setIsActive={setIsActive} isActive={isActive} />
-        <div>
-          <ChangeLanguage />
-        </div>
       </motion.div>
       <NavMenuBackground isActive={isActive} />
       <AnimatePresence mode="wait">

@@ -12,11 +12,6 @@ interface LocaleLayoutProps {
   params: { locale: string };
 }
 
-interface LocaleLayoutProps {
-  children: React.ReactNode;
-  params: { locale: string };
-}
-
 export default function LocaleLayout({
   children,
   params: { locale },
