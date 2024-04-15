@@ -32,5 +32,9 @@ export default function Magnetic({ children }: { children: ReactNode }) {
     });
   }, [magnetic]);
 
-  return <div ref={magnetic}>{children}</div>;
+  return (
+    <div className="" ref={magnetic}>
+      {children}
+    </div>
+  );
 }
