@@ -12,9 +12,8 @@ const Button: FC<ButtonProps> = ({ onClick, children, py, px }) => {
   return (
     <button
       onClick={onClick}
-
       className={`className="relative block ${px ? px : "px-[4rem]"} ${
-        py ? py : "py-[5.3rem]"
+        py ? py : "py-10 md:py-[5.3rem]"
       } rounded-full bg-thirdCol font-bold text-white "
 
     `}

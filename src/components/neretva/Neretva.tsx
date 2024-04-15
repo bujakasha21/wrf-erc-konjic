@@ -21,16 +21,16 @@ const Nerertva = ({ children }: { children: ReactNode }) => {
           {/* <Title textSize="text-3xl" translation="Neretva" /> */}
           {children}
         </div>
-        <div className="w-full h-full  relative ">
+        <div className="w-full h-full relative pt-20">
           <Image
             src={neretva}
-            className="absolute w-full h-auto object-cover  -right-[30%]"
+            className="absolute w-full h-auto object-cover"
             alt="Neretva"
           />
         </div>
       </div>
       <motion.div
-        className="relative mt-[100px]  w-full z-[20]"
+        className="relative w-full z-[20]"
         style={{ height }}
         data-scroll
         data-scroll-speed="0.01"
