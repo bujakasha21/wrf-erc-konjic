@@ -27,7 +27,7 @@ export default function ChangeLanguage({ isActive }: { isActive: boolean }) {
           disabled={isPending}
         >
           <option className="text-textColor" value="bs">
-            <div className="w-full h-full">BS</div>
+            BS
           </option>
           <option className="text-textColor" value="en">
             EN

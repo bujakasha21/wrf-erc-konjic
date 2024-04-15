@@ -11,7 +11,7 @@ const BurgerButton: FC<NavStateProps> = ({ isActive, setIsActive }) => {
   return (
     <div
       onClick={() => setIsActive && setIsActive(!isActive)}
-      className="xl:absolute right-0  top-4 flex  xl:items-start  gap-4 xl:px-10 cursor-pointer text-white text-xl"
+      className="md:absolute right-0 top-8 flex md:items-start gap-4 md:px-10 px-0 cursor-pointer text-white text-xl"
     >
       <AnimatedHamburgerButton isActive={isActive} setIsActive={setIsActive} />
       <div className="relative mt-1">
@@ -22,7 +22,7 @@ const BurgerButton: FC<NavStateProps> = ({ isActive, setIsActive }) => {
           {locale === "en" ? "Menu" : "Meni"}
         </motion.p>
         <motion.p
-          className="absolute inset-0 opacity-0"
+          className="inset-0 opacity-0"
           variants={animations.opacity}
           animate={!isActive ? "closed" : "open"}
         >

@@ -1,5 +1,5 @@
 "use client";
-import { FC, useEffect } from "react";
+import { FC, useEffect, useRef } from "react";
 import Footer from "../footer/Footer";
 import Nav from "../nav/Nav";
 
@@ -18,7 +18,7 @@ const LayoutWrapper: FC<LayoutWrapperProps> = ({ children }) => {
   return (
     <>
       <Nav />
-      <main>{children}</main>
+      <div>{children}</div>
       <Footer />
     </>
   );

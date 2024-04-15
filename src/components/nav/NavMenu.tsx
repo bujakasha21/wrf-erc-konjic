@@ -43,7 +43,7 @@ const NavMenu: FC<NavMenuProps> = ({
 
   return (
     <motion.div
-      className="absolute overflow-hidden z-20 bg-white"
+      className="absolute z-20 py-10 overflow-hidden w-full bg-white"
       variants={animations.height}
       initial="initial"
       animate="enter"
@@ -63,7 +63,7 @@ const NavMenu: FC<NavMenuProps> = ({
                   }
                   href={`/${locale}/${href}`}
                   key={i}
-                  className="overflow-hidden"
+                  className=""
                 >
                   <motion.p
                     className="flex text-4xl font-thin"
@@ -80,7 +80,7 @@ const NavMenu: FC<NavMenuProps> = ({
                 </Link>
               );
             })}
-            <div className="block xl:hidden">
+            <div className="block md:hidden">
               <ChangeLanguage isActive={isActive} />
             </div>
           </div>

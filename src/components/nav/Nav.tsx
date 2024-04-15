@@ -13,6 +13,7 @@ import NavMenuBackground from "./NavMenuBackground";
 import BurgerButton from "./BurgerButton";
 
 import Logo from "@/assets/logo.png";
+import BlueLogo from "@/assets/logo.png";
 import ChangeLanguage from "../utils/ChangeLanguage";
 import { useLocale } from "next-intl";
 
@@ -56,28 +57,28 @@ const Nav = () => {
       } `}
     >
       <motion.div
-        className={`flex items-center justify-center gap-8 xl:justify-center uppercase px-4 `}
+        className={`flex items-center justify-center gap-8 lg:justify-center uppercase px-4 `}
         variants={animations.color}
         initial="initial"
         animate={isActive ? "open" : "closed"}
       >
         {/* Title */}
 
-        <div className="absolute top-4 left-0 px-4 md:px-10">
+        <div className="absolute top-7 left-0 px-4 md:px-10">
           <h1
-            className={`text-xl font-bold hidden xl:block ${
+            className={`text-xl font-bold hidden md:block ${
               !isActive ? "text-white" : "text-textColor"
-            }`}
+            } `}
           >
             {locale === "en" ? (
-              <span>
-                WRF Senior European
-                <br /> Rafting Championship
+              <span className={`${isOnTop ? "text-white" : "text-secCol"}`}>
+                Senior European
+                <br /> Rafting Championship 2024
               </span>
             ) : (
               <span>
-                WRF Evropsko
-                <br /> Rafting Prvenstvo
+                Seniorsko Evropsko
+                <br /> Rafting Prvenstvo 2024
               </span>
             )}
           </h1>
@@ -85,7 +86,7 @@ const Nav = () => {
 
         {/* Logo */}
         <Link
-          className="w-[5rem] xl:w-[7rem] h-[3rem] xl:h-[4rem] relative mt-4 my-8"
+          className="w-[6rem] lg:w-[7rem] h-[4rem] lg:h-[4rem] relative mt-7 my-10"
           href="/"
         >
           <AnimatePresence mode="wait">
@@ -120,7 +121,7 @@ const Nav = () => {
             )}
           </AnimatePresence>
         </Link>
-        <div className="hidden xl:block">
+        <div className="hidden md:block">
           <ChangeLanguage isActive={isActive} />
         </div>
         <BurgerButton setIsActive={setIsActive} isActive={isActive} />

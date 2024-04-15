@@ -9,7 +9,7 @@ import headerPhoto from "@/assets/header1.jpg";
 const HeroSection = () => {
   const t = useTranslations("Header");
   return (
-    <section className="w-full relative h-screen md:h-auto">
+    <section className="w-full relative h-screen md:h-auto overflow-hidden">
       <div className="flex absolute px-4 md:px-28 items-center inset-0 h-full mx-auto">
         <div
           data-scroll

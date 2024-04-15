@@ -17,7 +17,7 @@ import AccommodationWrapper from "@/components/accommodation/AccommodationWrappe
 
 export default function Home() {
   return (
-    <div>
+    <>
       <HeroSection />
       <AboutEvent />
       <Sponsors />
@@ -27,6 +27,6 @@ export default function Home() {
       <Gallery />
       <NeretvaWrapper />
       <AccommodationWrapper />
-    </div>
+    </>
   );
 }

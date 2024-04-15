@@ -30,7 +30,7 @@ const Sponsors = () => {
   }, [isInView, controls]);
 
   return (
-    <section id="sponzori" className="w-full py-10 md:py-24 overflow-hidden">
+    <section id="sponzori" className="w-full py-10 md:py-24">
       <motion.div
         animate={controls}
         ref={ref}
