@@ -8,19 +8,20 @@ import Magnetic from "../utils/Magnetic";
 const Organization = () => {
   const t = useTranslations("Organization");
   return (
-    <section className="py-8 md:py-24 w-full px-4 md:px-28 grid grid-cols-1 md:grid-cols-2 items-start gap-8 text-textColor">
+    <section className="py-14 md:py-24 w-full px-4 md:px-28 grid grid-cols-1 md:grid-cols-2 items-start gap-8 text-textColor">
       <div data-scroll data-scroll-speed="0.2">
-        <div className="flex flex-col">
-          <span className="text-xs md:text-sm text-thirdCol font-medium">
-            <span className="text-xs md:text-md font-semibold block uppercase">
-              {t("title")}
-            </span>
+        <div className="flex flex-col items-center md:items-start text-center md:text-left gap-y-2">
+          <span className="text-base md:text-xl text-thirdCol font-semibold block uppercase">
+            {t("title")}
           </span>
-          <h3 className={`font-bold text-6xl uppercase`}>{t("event")}</h3>
+
+          <h3 className={`font-bold text-3xl md:text-5xl uppercase`}>
+            {t("event")}
+          </h3>
         </div>
-        <p className="text-md my-5">{t("desc1")}</p>
-        <p className="text-md">{t("desc2")}</p>
-        <div className="flex items-center justify-start text-white gap-x-8 mt-8">
+        <p className="text-lg font-bold my-5 text-justify">{t("desc1")}</p>
+        <p className="text-base text-justify">{t("desc2")}</p>
+        <div className="flex items-center justify-center md:justify-start text-white gap-x-8 mt-8">
           <Magnetic>
             {/* <MotionButton name="REZERVISI" onClick={() => console.log("first")} /> */}
             <Button py="py-[3rem]" px="px-[1.5rem] text-xs relative">

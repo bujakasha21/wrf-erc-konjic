@@ -30,7 +30,7 @@ function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="w-full  flex items-start justify-center bg-gradient-to-r from-blue-900 to-cyan-700 px-4 xl:px-28 py-8 xl:pt-12"
+      className="w-full  flex items-start justify-center bg-gradient-to-r from-blue-900 to-cyan-700 px-4 xl:px-28 py-20 xl:pt-12"
     >
       <motion.div
         data-scroll

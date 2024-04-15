@@ -15,7 +15,7 @@ const ContactHeading = () => {
         <span className="block mb-4 text-base md:text-lg text-thirdCol font-semibold uppercase">
           {t("contact")}
         </span>
-        <h1 className="text-3xl md:text-4xl font-bold uppercase text-white">
+        <h1 className="text-3xl md:text-5xl font-bold uppercase text-white">
           {t("header")}
         </h1>
         <p className="text-base md:text-xl py-5 text-white">

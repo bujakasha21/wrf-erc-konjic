@@ -147,10 +147,10 @@ const ContactForm = () => {
         {/* other part */}
         <div className="w-full md:w-1/2">
           <div className="flex flex-col items-start justify-start pt-20 h-full">
-            <h4 className="text-thirdCol font-semibold uppercase">
+            <h4 className="text-thirdCol text-2xl pb-3 font-semibold uppercase">
               Details about tournament
             </h4>
-            <div className="flex flex-col gap-y-1 text-secCol">
+            <div className="flex flex-col gap-y-1 text-xl text-secCol">
               <span>Konjic, Neretva,</span>
               <span>88400 East Sarajevo,</span>
               <span>Bosnia and Herzegovina</span>
