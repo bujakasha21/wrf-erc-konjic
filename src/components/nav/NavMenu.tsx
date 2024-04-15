@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import * as animations from "@/animations/animations";
 import Image from "next/image";
 import { useLocale } from "next-intl";
+import ChangeLanguage from "../utils/ChangeLanguage";
 
 interface NavMenuProps {
   selectedLink: {
@@ -12,9 +13,14 @@ interface NavMenuProps {
     index: number;
   };
   setSelectedLink: (value: { isActive: boolean; index: number }) => void;
+  isActive: boolean;
 }
 
-const NavMenu: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
+const NavMenu: FC<NavMenuProps> = ({
+  selectedLink,
+  setSelectedLink,
+  isActive,
+}) => {
   const locale = useLocale();
 
   const getChar = (title: string) => {
@@ -45,7 +51,7 @@ const NavMenu: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
     >
       <div className="uppercase font-medium px-8 py-2">
         <div className="w-full h-full flex items-center justify-between">
-          <div className="flex flex-wrap gap-8 w-1/2">
+          <div className="flex flex-col xl:flex-row flex-wrap gap-8 w-1/2">
             {navlist.map(({ name, href }, i) => {
               return (
                 <Link
@@ -74,6 +80,9 @@ const NavMenu: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
                 </Link>
               );
             })}
+            <div className="block xl:hidden">
+              <ChangeLanguage isActive={isActive} />
+            </div>
           </div>
           <motion.div
             className="w-[40rem] h-[20rem] relative rounded-md"

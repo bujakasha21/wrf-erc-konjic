@@ -56,7 +56,7 @@ const Nav = () => {
       } `}
     >
       <motion.div
-        className={`flex items-center justify-start xl:justify-center uppercase px-4 `}
+        className={`flex items-center justify-center gap-8 xl:justify-center uppercase px-4 `}
         variants={animations.color}
         initial="initial"
         animate={isActive ? "open" : "closed"}
@@ -82,9 +82,7 @@ const Nav = () => {
             )}
           </h1>
         </div>
-        <div className="block xl:hidden">
-          <ChangeLanguage isActive={isActive} />
-        </div>
+
         {/* Logo */}
         <Link
           className="w-[5rem] xl:w-[7rem] h-[3rem] xl:h-[4rem] relative mt-4 my-8"
@@ -131,6 +129,7 @@ const Nav = () => {
       <AnimatePresence mode="wait">
         {isActive && (
           <NavMenu
+            isActive={isActive}
             selectedLink={selectedLink}
             setSelectedLink={setSelectedLink}
           />
