@@ -21,9 +21,9 @@ const Countries = () => {
   });
 
   const tranforms: Transforms = {
-    y1: useTransform(scrollYProgress, [0, 1], [0, -height * 1.5]),
+    y1: useTransform(scrollYProgress, [0, 1], [0, -height * 2]),
     y2: useTransform(scrollYProgress, [0, 1], [0, height * 1]),
-    y3: useTransform(scrollYProgress, [0, 1], [0, -height * 1.5]),
+    y3: useTransform(scrollYProgress, [0, 1], [0, -height * 2]),
   };
 
   const { countryCodes } = countries;

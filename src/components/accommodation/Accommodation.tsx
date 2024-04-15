@@ -4,7 +4,7 @@ import ReactPlayer from "react-player/youtube";
 
 export default function Accommodation() {
   return (
-    <div className="player-wrapper pointer-events-none">
+    <div className="player-wrapper pointer-events-none ">
       <ReactPlayer
         width="100%"
         height="100%"
