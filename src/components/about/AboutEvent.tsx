@@ -47,10 +47,7 @@ const AboutEvent = () => {
                     locale === "en" ? "py-[3.5rem]" : "py-[3.2rem]"
                   }  text-xs relative`}
                 >
-                  <Link
-                    href={`/${locale}/tehnical-informations`}
-                    className="w-1/2 block mx-auto"
-                  >
+                  <Link href={`#`} className="w-1/2 block mx-auto">
                     {t("button")}
                   </Link>
                 </Button>
