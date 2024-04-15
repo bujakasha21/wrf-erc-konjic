@@ -22,14 +22,14 @@ const AnimatedHamburgerButton: FC<NavStateProps> = ({
         <motion.span
           variants={VARIANTS.top}
           className={`absolute h-[3px] w-8 ${
-            !isActive ? "bg-black/70" : "bg-gray-200"
+            !isActive ? "bg-white" : "bg-textColor"
           }`}
           style={{ y: "-50%", left: "50%", x: "-50%", top: "30%" }}
         />
         <motion.span
           variants={VARIANTS.middle}
           className={`absolute h-[3px] w-8 ${
-            !isActive ? "bg-black/70" : "bg-gray-200"
+            !isActive ? "bg-white" : "bg-textColor"
           }`}
           style={{ left: "50%", x: "-50%", top: "50%", y: "-50%" }}
         />

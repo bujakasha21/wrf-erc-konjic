@@ -4,32 +4,22 @@ interface ButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
   colorType?: "light" | "dark";
+  px?: string;
+  py?: string;
 }
 
-const Button: FC<ButtonProps> = ({ onClick, children, colorType = "dark" }) => {
-  const bgCol =
-    colorType === "dark" ? "bg-mainColGradient" : "bg-lightColGradient";
-  const bgColBefore = colorType === "dark" ? "bg-mainColor" : "bg-thirdCol";
-
+const Button: FC<ButtonProps> = ({ onClick, children, py, px }) => {
   return (
     <button
       onClick={onClick}
-      className={`relative group px-8 h-12 ${bgCol}
-    before:absolute 
-    before:inset-0 
-    before:bg-mainColor
-    before:scale-x-0 
-    before:origin-right
-    before:transition
-    before:duration-300
-    hover:before:scale-x-100
-    hover:before:origin-left
-    rounded-full
+
+      className={`className="relative block ${px ? px : "px-[4rem]"} ${
+        py ? py : "py-[5.3rem]"
+      } rounded-full bg-thirdCol font-bold text-white "
+
     `}
     >
-      <span className={`relative uppercase text-base text-white`}>
-        {children}
-      </span>
+      <span className={`uppercase`}>{children}</span>
     </button>
   );
 };

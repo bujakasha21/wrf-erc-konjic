@@ -1,6 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
-// import WhiteLogo from "@/assets/logo-white.png";
+import { useEffect, useMemo, useRef, useState } from "react";
+import WhiteLogo from "@/assets/logo-white.png";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -17,7 +17,9 @@ import ChangeLanguage from "../utils/ChangeLanguage";
 
 const Nav = () => {
   const pathname = usePathname();
+  const navRef = useRef(null);
   const [isActive, setIsActive] = useState<boolean>(false);
+  const [isOnTop, setIsOnTop] = useState(true);
   const [selectedLink, setSelectedLink] = useState<{
     isActive: boolean;
     index: number;
@@ -30,23 +32,80 @@ const Nav = () => {
     setIsActive(false);
   }, [pathname]);
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const scrollPosition = window.scrollY;
+      if (!navRef.current) return;
+      const navOffsetTop = 150;
+
+      if (scrollPosition >= navOffsetTop) {
+        setIsOnTop(false);
+      } else {
+        setIsOnTop(true);
+      }
+    });
+  }, []);
   return (
-    <nav className={`fixed w-full z-50`}>
+
+    <nav
+      ref={navRef}
+      className={`nav fixed w-full z-[50] duration-300 ease-linear ${
+        isOnTop ? "backdrop-blur-none" : "backdrop-blur-md"
+      } `}
+    >
+
       <motion.div
-        className="flex items-center justify-center uppercase"
+        className={`flex items-center justify-center uppercase`}
         variants={animations.color}
         initial="initial"
         animate={isActive ? "open" : "closed"}
       >
         {/* Title */}
-        <div className="absolute flex items-center h-full left-0 px-10">
-          <h1 className="text-xl font-bold text-secCol">
-            WRF Senior Europe Championship
+
+        <div className="absolute top-4 left-0 px-10">
+          <h1
+            className={`text-xl font-bold ${
+              !isActive ? "text-white" : "text-textColor"
+            }`}
+          >
+            WRF Senior European
+            <br /> Rafting Championship
+
           </h1>
         </div>
         {/* Logo */}
-        <Link className="w-[7rem] h-[4em] relative mt-4" href="/">
-          <Image fill={true} src={Logo} alt="Logo" className="w-full h-full" />
+        <Link className="w-[7rem] h-[4em] relative mt-4 my-8" href="/">
+          <AnimatePresence mode="wait">
+            {isActive ? (
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={isActive ? { scale: 1.5 } : { scale: 0 }}
+                transition={{ duration: 1 }}
+                className="w-full h-full"
+              >
+                <Image
+                  fill={true}
+                  src={Logo}
+                  alt="Logo"
+                  className="w-full h-full"
+                />
+              </motion.div>
+            ) : (
+              <motion.div
+                initial={{ scale: 1 }}
+                animate={isActive ? { scale: 1.5 } : { scale: 1 }}
+                transition={{ duration: 1 }}
+                className="w-full h-full"
+              >
+                <Image
+                  fill={true}
+                  src={WhiteLogo}
+                  alt="Logo"
+                  className="w-full h-full"
+                />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </Link>
         <BurgerButton setIsActive={setIsActive} isActive={isActive} />
         <div>

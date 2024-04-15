@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import React from "react";
 
@@ -6,12 +5,14 @@ import Section2 from "@/assets/about1.jpg";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import Button from "../utils/Buttons";
+import Magnetic from "../utils/Magnetic";
+import MotionButton from "../utils/MotionButton";
 
 const AboutEvent = () => {
   const locale = useLocale();
   const t = useTranslations("Event");
   return (
-    <section className="w-full relative">
+    <section id="#event" className="w-full relative">
       <div className="flex absolute px-4 md:px-28 items-start justify-between inset-0 h-full mx-auto">
         <div
           data-scroll
@@ -28,11 +29,16 @@ const AboutEvent = () => {
             <h6 className="text-xl font-bold">{t("desc1")}</h6>
             <p className="text-base text-textColor">{t("desc2")}</p>
             <div className="flex items-center justify-center md:justify-start">
-              <Button>
-                <Link href={`/${locale}/tehnical-informations`}>
-                  {t("button")}
-                </Link>
-              </Button>
+              <Magnetic>
+                <Button py="py-[3.2rem]" px="px-[0rem] text-xs relative">
+                  <Link
+                    href={`/${locale}/tehnical-informations`}
+                    className="w-1/2 block mx-auto"
+                  >
+                    {t("button")}
+                  </Link>
+                </Button>
+              </Magnetic>
             </div>
           </div>
         </div>

@@ -22,6 +22,7 @@ module.exports = {
           "radial-gradient(circle, rgba(59,138,153,1) 0%, rgba(11,91,146,1) 80%)",
         lightColGradient:
           "radial-gradient(circle, #9cd54b 0%, rgba(11,91,146,1) 80%)",
+        radial2: "bg-gradient-to-b from-blue-800 to-blue-500",
       },
     },
   },
