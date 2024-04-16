@@ -38,9 +38,9 @@ export const galleryData = (locale: string) => [
   {
     title: locale === "en" ? "Konjic Museum" : "Muzej grada Konjica",
     description:
-      locale === "eng"
+      locale === "en"
         ? "The museum offers an insight into the rich history and culture of Konjic, with collections that include archaeological artefacts, works of art and traditional woodworking."
-        : " Muzej nudi uvid u bogatu povijest i kulturu Konjica, sa zbirkama koje obuhvaćaju arheološke artefakte, umjetnička djela i tradicionalnu obradu drva.",
+        : "Muzej nudi uvid u bogatu povijest i kulturu Konjica, sa zbirkama koje obuhvaćaju arheološke artefakte, umjetnička djela i tradicionalnu obradu drva.",
     link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
     color: "#C2491D",
     src: muzej,
@@ -48,9 +48,9 @@ export const galleryData = (locale: string) => [
   {
     title: locale === "en" ? "Prenj mountain" : "Planina prenj",
     description:
-      locale === "eng"
+      locale === "en"
         ? "For nature lovers, the Prenj mountain offers incredible hiking trails and beautiful viewpoints. Visitors can enjoy untouched nature and beautiful landscapes."
-        : " Za ljubitelje prirode, planina Prenj nudi nevjerojatne pješačke staze i prekrasne vidikovce. Posjetitelji mogu uživati u netaknutoj prirodi i prekrasnim pejzažima.",
+        : "Za ljubitelje prirode, planina Prenj nudi nevjerojatne pješačke staze i prekrasne vidikovce. Posjetitelji mogu uživati u netaknutoj prirodi i prekrasnim pejzažima.",
     link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
     color: "#C2491D",
     src: prenj,

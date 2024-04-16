@@ -86,14 +86,14 @@ const Nav = () => {
 
         {/* Logo */}
         <Link
-          className="w-[6rem] lg:w-[7rem] h-[4rem] lg:h-[6rem] relative mt-4 my-4"
+          className="w-[5rem] h-[4rem] lg:w-[7rem]  lg:h-[6rem] relative my-4"
           href="/"
         >
           <AnimatePresence mode="wait">
             {isActive ? (
               <motion.div
                 initial={{ scale: 0 }}
-                animate={isActive ? { scale: 1.5 } : { scale: 0 }}
+                animate={isActive ? { scale: 1 } : { scale: 0 }}
                 transition={{ duration: 1 }}
                 className="w-full h-full"
               >
