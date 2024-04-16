@@ -101,7 +101,7 @@ const Nav = () => {
                   fill={true}
                   src={Logo}
                   alt="Logo"
-                  className="w-full h-full"
+                  className="w-full h-full p-4"
                 />
               </motion.div>
             ) : (

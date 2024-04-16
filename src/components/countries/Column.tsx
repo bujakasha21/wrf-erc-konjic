@@ -8,7 +8,13 @@ import serbia from "@/assets/countries/serbia.png";
 import bosnia from "@/assets/countries/bosnia.png";
 import montenegro from "@/assets/countries/cg.png";
 import slovenia from "@/assets/countries/slovenia.png";
-import germany from "@/assets/countries/germany.png";
+import italy from "@/assets/countries/italy.png";
+import turkey from "@/assets/countries/turkey.png";
+import czech from "@/assets/countries/czech.png";
+import france from "@/assets/countries/france.png";
+import austria from "@/assets/countries/austria.png";
+import bulgaria from "@/assets/countries/bulgaria.png";
+import ukraine from "@/assets/countries/ukraine.png";
 
 export interface ColumnProps {
   start: number;
@@ -27,19 +33,19 @@ const Column: FC<ColumnProps> = ({ start, end, countryCodes, motionValue }) => {
 
   return (
     <motion.div
-      className={`w-[30vw] h-full flex flex-col gap-4 min-w-[100px] relative  ${
+      className={`w-[30vw] h-full  flex flex-col gap-2 min-w-[100px] relative  ${
         start === 6 && "-top-[100%] md:-top-[50%]"
       }`}
       style={{ y: motionValue }}
     >
       {countryFlags.map(({ src, alt }, index) => (
-        <div key={index} className="w-full px-4 md:px-10 md:h-full relative">
+        <div key={index} className="w-full px-4 md:px-6 relative">
           <Image
             src={croatia}
             alt={alt}
             width={200}
             height={500}
-            className="w-full h-[5rem] md:h-[10rem] rounded-md"
+            className="w-full h-[5rem] my-2 md:h-[15rem] rounded-md"
             loading="lazy"
           />
           <Image
@@ -47,7 +53,7 @@ const Column: FC<ColumnProps> = ({ start, end, countryCodes, motionValue }) => {
             alt={alt}
             width={200}
             height={500}
-            className="w-full h-[5rem] md:h-[10rem] rounded-md"
+            className="w-full h-[5rem] my-2 md:h-[15rem] rounded-md"
             loading="lazy"
           />
           <Image
@@ -55,7 +61,7 @@ const Column: FC<ColumnProps> = ({ start, end, countryCodes, motionValue }) => {
             alt={alt}
             width={200}
             height={500}
-            className="w-full h-[5rem] md:h-[10rem] rounded-md"
+            className="w-full h-[5rem] my-2 md:h-[15rem] rounded-md"
             loading="lazy"
           />
           <Image
@@ -63,7 +69,7 @@ const Column: FC<ColumnProps> = ({ start, end, countryCodes, motionValue }) => {
             alt={alt}
             width={200}
             height={500}
-            className="w-full h-[5rem] md:h-[10rem] rounded-md"
+            className="w-full h-[5rem] my-2 md:h-[15rem] rounded-md"
             loading="lazy"
           />
           <Image
@@ -71,15 +77,71 @@ const Column: FC<ColumnProps> = ({ start, end, countryCodes, motionValue }) => {
             alt={alt}
             width={200}
             height={500}
-            className="w-full h-[5rem] md:h-[10rem] rounded-md"
+            className="w-full h-[4rem] my-2 md:h-[15rem] rounded-md"
             loading="lazy"
           />
           <Image
-            src={germany}
+            src={italy}
             alt={alt}
             width={200}
             height={500}
-            className="w-full h-[5rem] md:h-[10rem] rounded-md"
+            className="w-full h-[5rem] my-2 md:h-[15rem] rounded-md"
+            loading="lazy"
+          />
+          <Image
+            src={turkey}
+            alt={alt}
+            width={200}
+            height={500}
+            className="w-full h-[5rem] my-2 md:h-[15rem] rounded-md"
+            loading="lazy"
+          />
+          <Image
+            src={italy}
+            alt={alt}
+            width={200}
+            height={500}
+            className="w-full h-[5rem] my-2 md:h-[15rem] rounded-md"
+            loading="lazy"
+          />
+          <Image
+            src={czech}
+            alt={alt}
+            width={200}
+            height={500}
+            className="w-full h-[5rem] my-2 md:h-[15rem] rounded-md"
+            loading="lazy"
+          />
+          <Image
+            src={france}
+            alt={alt}
+            width={200}
+            height={500}
+            className="w-full h-[5rem] my-2 md:h-[15rem] rounded-md"
+            loading="lazy"
+          />
+          <Image
+            src={austria}
+            alt={alt}
+            width={200}
+            height={500}
+            className="w-full h-[5rem] my-2 md:h-[15rem] rounded-md"
+            loading="lazy"
+          />
+          <Image
+            src={bulgaria}
+            alt={alt}
+            width={200}
+            height={500}
+            className="w-full h-[5rem] my-2 md:h-[15rem] rounded-md"
+            loading="lazy"
+          />
+          <Image
+            src={ukraine}
+            alt={alt}
+            width={200}
+            height={500}
+            className="w-full h-[5rem] my-2 md:h-[15rem] rounded-md"
             loading="lazy"
           />
         </div>
