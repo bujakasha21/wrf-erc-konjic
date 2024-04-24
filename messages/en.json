@@ -60,5 +60,11 @@
     "contact": "Contact Us",
     "header": "If you have any questions or concerns, feel free to contact us.",
     "description": "If you encounter any issues with signing up for tournament or have any questions, please don't hesitate to contact us. Fill out the form below, and we'll send you an email with the requested information."
+  },
+
+  "Volunteering": {
+    "heading": "Do you want to be a volunteer?",
+    "description": "Do you want to help us with organization of SENIOR EUROPEAN RAFTING CHAMPIONSHIP? Sign up as a volunteer and become a part of the team!",
+    "button": "Sign up"
   }
 }

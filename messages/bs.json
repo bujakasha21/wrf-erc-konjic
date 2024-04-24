@@ -60,5 +60,10 @@
     "contact": "Kontaktiraj nas",
     "header": "Nešto vam je nejasno? Slobodno nas kontaktirajte.",
     "description": "Ako imate bilo kakav problem s prijavom ili vam je nešto nejasno, ne ustručavajte se da nas kontaktirate. Popunite formu ispod i šaljemo vam mail sa traženim odgovorima."
+  },
+  "Volunteering": {
+    "heading": "Želiš li da volontiraš?",
+    "description": "Želiš da pomogneš u organizaciji SENIORSKOG EVROPSKOG PRVENSTVA U RAFTINGU? Prijavi se kao volonter i postani dio tima!",
+    "button": "Prijavi se"
   }
 }
