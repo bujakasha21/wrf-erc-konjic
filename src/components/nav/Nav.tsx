@@ -86,7 +86,7 @@ const Nav = () => {
 
         {/* Logo */}
         <Link
-          className="w-[6rem] lg:w-[7rem] h-[4rem] lg:h-[6rem] relative mt-4 my-4"
+          className="w-[6rem] md:w-[7rem] h-[4rem] md:h-[6.5rem] relative mt-4 my-4"
           href="/"
         >
           <AnimatePresence mode="wait">

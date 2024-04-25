@@ -17,7 +17,8 @@ const CountriesWrapper = () => {
         </div>
         <div className="text-justify">
           <p className="font-semibold my-5 text-base">{t("desc1")}</p>
-          <p className="text-md">{t("desc2")}</p>
+          <p className="text-md my-3">{t("desc2")}</p>
+          <p className="text-md">{t("desc3")}</p>
         </div>
       </div>
     </div>

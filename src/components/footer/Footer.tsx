@@ -35,7 +35,7 @@ function Footer() {
       <motion.div
         data-scroll
         data-scroll-speed="0.2"
-        className=" w-full px-4 text-textColor flex flex-col"
+        className=" w-full px-4 text-textColor flex flex-col md:px-28"
         style={{ opacity }}
       >
         <div className="flex justify-between">

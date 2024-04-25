@@ -9,8 +9,8 @@ import Map from "../Map";
 const Konjic = () => {
   const t = useTranslations("Konjic");
   return (
-    <section id="lokacija" className="w-full relative py-14">
-      <div className="flex flex-col lg:flex-row items-start justify-between px-4 md:px-28 h-full gap-x-8">
+    <section id="lokacija" className="w-full relative py-10">
+      <div className="flex flex-col lg:flex-row items-start justify-between px-4 md:px-28 h-full gap-x-8 pb-14">
         <div className="flex flex-col text-left gap-y-4 mt-10 w-full md:w-[70%]">
           <div className="flex flex-col">
             <span className="text-xs md:text-md text-thirdCol font-semibold block uppercase">

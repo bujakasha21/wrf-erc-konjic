@@ -28,7 +28,7 @@ export default function AccommodationWrapper() {
           />
         </div>
         <Magnetic>
-          <Button py="py-[3.5rem]" px="px-[3rem] text-md">
+          <Button py="py-[3.5rem]" px="px-[2rem] text-md">
             <Link target="_blank" href="https://nova.gardencity.ba/">
               {t("btn")}
             </Link>

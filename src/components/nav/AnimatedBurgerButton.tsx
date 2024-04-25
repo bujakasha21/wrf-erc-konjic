@@ -35,7 +35,7 @@ const AnimatedHamburgerButton: FC<NavStateProps> = ({
         />
         <motion.span
           variants={VARIANTS.bottom}
-          className="absolute h-1 w- bg-white"
+          className="absolute h-1 bg-white"
           style={{
             x: "-50%",
             y: "50%",
