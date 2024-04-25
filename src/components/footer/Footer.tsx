@@ -40,7 +40,7 @@ function Footer() {
       >
         <div className="flex justify-between">
           <div className="w-full text-4xl xl:text-6xl font-bold">
-            <h2 className="w-full md:w-4/5 text-white uppercase">
+            <h2 className="w-full md:w-4/5 text-white uppercase text-center mx-auto">
               {locale === "en" ? (
                 <span>
                   Join us at
