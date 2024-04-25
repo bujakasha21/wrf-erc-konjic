@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import WhiteLogo from "@/assets/logo-white.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,12 +16,13 @@ import Logo from "@/assets/logo.png";
 import BlueLogo from "@/assets/logo.png";
 import ChangeLanguage from "../utils/ChangeLanguage";
 import { useLocale } from "next-intl";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Nav = () => {
   const locale = useLocale();
-
   const pathname = usePathname();
-  const navRef = useRef(null);
+  const navRef = useRef<HTMLElement | null>(null);
   const [isActive, setIsActive] = useState<boolean>(false);
   const [isOnTop, setIsOnTop] = useState(true);
   const [selectedLink, setSelectedLink] = useState<{
@@ -36,17 +37,42 @@ const Nav = () => {
     setIsActive(false);
   }, [pathname]);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const scrollPosition = window.scrollY;
-      if (!navRef.current) return;
-      const navOffsetTop = 150;
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     const scrollPosition = window.scrollY;
+  //     if (!navRef.current) return;
+  //     const navOffsetTop = 150;
 
-      if (scrollPosition >= navOffsetTop) {
-        setIsOnTop(false);
-      } else {
-        setIsOnTop(true);
-      }
+  //     if (scrollPosition >= navOffsetTop) {
+  //       setIsOnTop(false);
+  //     } else {
+  //       setIsOnTop(true);
+  //     }
+  //   });
+  // }, []);
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    if (!navRef.current) return;
+    const showNaw = gsap
+      .fromTo(
+        navRef.current,
+        { top: "-200px", opacity: 0 },
+        { top: "0px", opacity: 1, duration: 0.4 }
+      )
+      .progress(1);
+
+    showNaw.play(-2);
+
+    ScrollTrigger.create({
+      start: "top top",
+      end: "max",
+      onUpdate: (self) => {
+        const topStyle = navRef.current ? +navRef.current.style.top : 0;
+        setIsOnTop(+topStyle > 0);
+
+        self.direction === -1 ? showNaw.play() : showNaw.reverse();
+      },
     });
   }, []);
   return (
@@ -71,7 +97,7 @@ const Nav = () => {
             } `}
           >
             {locale === "en" ? (
-              <span className={`${isOnTop ? "text-white" : "text-secCol"}`}>
+              <span>
                 Senior European
                 <br /> Rafting Championship 2024
               </span>

@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useRef } from "react";
-
+import { countryFlags } from "@/data/country-flags";
 import countries from "@/data/countries.json";
 import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
 
@@ -21,16 +21,16 @@ const Countries = () => {
   });
 
   const tranforms: Transforms = {
-    y1: useTransform(scrollYProgress, [0, 1], [0, -height * 2]),
-    y2: useTransform(scrollYProgress, [0, 1], [0, height * 1]),
-    y3: useTransform(scrollYProgress, [0, 1], [0, -height * 2]),
+    y1: useTransform(scrollYProgress, [0, 1], [0, height]),
+    y2: useTransform(scrollYProgress, [0, 1], [0, -height]),
+    y3: useTransform(scrollYProgress, [0, 1], [0, height]),
   };
 
-  const { countryCodes } = countries;
+  // const { countryCodes } = countries;
   const numberOfColumns = 3;
   const chunkSize = useMemo(
-    () => Math.ceil(countryCodes.length / numberOfColumns),
-    [countryCodes]
+    () => Math.ceil(countryFlags.length / numberOfColumns),
+    []
   );
 
   return (
@@ -45,8 +45,7 @@ const Countries = () => {
           <Column
             key={columnIndex}
             start={columnIndex * chunkSize}
-            end={Math.min((columnIndex + 1) * chunkSize, countryCodes.length)}
-            countryCodes={countryCodes}
+            end={Math.min((columnIndex + 1) * chunkSize, countryFlags.length)}
             motionValue={motionValue}
           />
         );

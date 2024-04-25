@@ -5,14 +5,14 @@ import Logo2 from "@/assets/logo.png";
 import wrf from "@/assets/logo_wrf_white.png";
 import konjic from "@/assets/logo-komplet-removebg-preview – kopija.png";
 import gardenLogo from "@/assets/gardenLogo.png";
+import kajakLogo from "@/assets/kajakLogo.png";
 
 import React, { useEffect, useRef } from "react";
-import { useTranslations } from "next-intl";
+
 import { motion, useAnimation, useInView, useScroll } from "framer-motion";
 import Link from "next/link";
 
 const Sponsors = () => {
-  // const t = useTranslations("Sponsors");
   const ref = useRef(null);
   const isInView = useInView(ref);
   const controls = useAnimation();
@@ -53,7 +53,14 @@ const Sponsors = () => {
           <Link target="_blank" href="https://welcometokonjic.ba/">
             <Image className="w-[8rem] h-[10rem]" src={konjic} alt="raft" />
           </Link>
-          <Link target="_blank" href="/" className="pointer-events-none">
+          <Link target="_blank" href="https://welcometokonjic.ba/">
+            <Image className="w-[13rem] h-[10rem]" src={kajakLogo} alt="raft" />
+          </Link>
+          <Link
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=100068525484988"
+            className="pointer-events-none"
+          >
             <Image
               className="w-[10rem] h-[10rem]"
               src={riverGuide}

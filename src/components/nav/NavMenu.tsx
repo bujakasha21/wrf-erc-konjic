@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import * as animations from "@/animations/animations";
 import Image from "next/image";
 import { useLocale } from "next-intl";
-import ChangeLanguage from "../utils/ChangeLanguage";
 
 interface NavMenuProps {
   selectedLink: {

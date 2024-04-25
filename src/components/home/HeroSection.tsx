@@ -5,6 +5,9 @@ import { useTranslations } from "next-intl";
 
 //images
 import headerPhoto from "@/assets/header1.jpg";
+import wrf from "@/assets/wrf-text-white.png";
+import logoWhite from "@/assets/logo-white.png";
+import gardenCityLogoWhite from "@/assets/gardenCityLogoWhite.png";
 
 const HeroSection = () => {
   const t = useTranslations("Header");
@@ -33,6 +36,23 @@ const HeroSection = () => {
               {t("desc1")} <span className="font-bold">{t("descbold")} </span>
               {t("desc2")}
             </p>
+          </div>
+          <div className="flex items-center">
+            <Image
+              className="w-[5rem] h-[5rem] xl:w-[12rem] xl:h-[12rem]"
+              src={gardenCityLogoWhite}
+              alt="raft"
+            />
+            <Image
+              className="w-[5rem] h-[2.5rem]  xl:w-[10rem] xl:h-[5rem]"
+              src={wrf}
+              alt="raft"
+            />
+            <Image
+              className="w-[3rem] h-[3rem]  xl:w-[8rem] xl:h-[8rem]"
+              src={logoWhite}
+              alt="raft"
+            />
           </div>
         </div>
       </div>
