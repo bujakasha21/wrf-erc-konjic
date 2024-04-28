@@ -24,7 +24,7 @@ body {
 
 .text-str {
   color: #ffba42;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
@@ -33,7 +33,7 @@ body {
 
 .text-str2 {
   color: #ffba42;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
