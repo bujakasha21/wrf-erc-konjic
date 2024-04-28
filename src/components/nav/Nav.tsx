@@ -112,7 +112,7 @@ const Nav = () => {
 
         {/* Logo */}
         <Link
-          className="w-[5rem] h-[4rem] lg:w-[7rem]  lg:h-[6rem] relative my-4"
+          className="w-[6rem] md:w-[7rem] h-[4rem] md:h-[6.5rem] relative mt-4 my-4"
           href="/"
         >
           <AnimatePresence mode="wait">
@@ -127,7 +127,7 @@ const Nav = () => {
                   fill={true}
                   src={Logo}
                   alt="Logo"
-                  className="w-full h-full"
+                  className="w-full h-full p-4"
                 />
               </motion.div>
             ) : (

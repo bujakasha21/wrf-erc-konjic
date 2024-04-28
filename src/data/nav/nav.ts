@@ -10,7 +10,7 @@ export const navbarList = [
   { name: "Početna", href: "/", image: nav1 },
   { name: "Event", href: "/event", image: nav2 },
   { name: "Sponzori", href: "/sponzori", image: nav3 },
-  { name: "Informacije", href: "/informacije", image: nav4 },
+  { name: "Informacije", href: "/tehnical-informations", image: nav4 },
   { name: "Lokacija", href: "/#lokacija", image: nav5 },
   { name: "Kontakt", href: "/contact", image: nav6 },
 ];
@@ -26,7 +26,7 @@ export const navbarList2 = (locale: string) => {
     },
     {
       name: locale === "en" ? "Informations" : "Informacije",
-      href: "#",
+      href: "/tehnical-informations",
       image: nav4,
     },
     {

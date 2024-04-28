@@ -14,6 +14,7 @@ import CountriesWrapper from "@/components/countries/CountriesWrapper";
 
 import NeretvaWrapper from "@/components/neretva/NeretvaWrapper";
 import AccommodationWrapper from "@/components/accommodation/AccommodationWrapper";
+import Volontiranje from "@/components/volontiranje/Volontiranje";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Sponsors />
       <Organization />
       <CountriesWrapper />
+      <Volontiranje />
       <Konjic />
       <Gallery />
       <NeretvaWrapper />

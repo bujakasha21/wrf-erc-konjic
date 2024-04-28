@@ -21,6 +21,7 @@ const Nerertva = ({ children }: { children: ReactNode }) => {
           data-scroll-speed="0.2"
           className="flex flex-col text-left gap-y-4 mt-10 w-full xl:w-[60%]"
         >
+          {/* <Title textSize="text-3xl" translation="Neretva" /> */}
           {children}
         </div>
         <div className="w-full h-full relative">
@@ -32,7 +33,7 @@ const Nerertva = ({ children }: { children: ReactNode }) => {
         </div>
       </div>
       <motion.div
-        className="relative w-full z-[20] hidden xl:block"
+        className="relative w-full z-[20] hidden md:block"
         style={{ height }}
       >
         <div className="h-[1550%] w-[110%] bg-[#f2f2f2]  -left-[10%] z-1 absolute inset-0 rounded-b shadow-xl "></div>
