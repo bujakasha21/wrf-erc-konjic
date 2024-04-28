@@ -156,9 +156,9 @@ const Nav = () => {
       <AnimatePresence mode="wait">
         {isActive && (
           <NavMenu
-            isActive={isActive}
             selectedLink={selectedLink}
             setSelectedLink={setSelectedLink}
+            setIsActive={setIsActive}
           />
         )}
       </AnimatePresence>

@@ -12,13 +12,13 @@ interface NavMenuProps {
     index: number;
   };
   setSelectedLink: (value: { isActive: boolean; index: number }) => void;
-  isActive: boolean;
+  setIsActive: (value: boolean) => void;
 }
 
 const NavMenu: FC<NavMenuProps> = ({
+  setIsActive,
   selectedLink,
   setSelectedLink,
-  isActive,
 }) => {
   const locale = useLocale();
 
@@ -42,7 +42,7 @@ const NavMenu: FC<NavMenuProps> = ({
 
   return (
     <motion.div
-      className="absolute z-20 py-10 overflow-hidden w-full bg-white"
+      className="absolute z-20 overflow-hidden w-full bg-white"
       variants={animations.height}
       initial="initial"
       animate="enter"
@@ -54,6 +54,7 @@ const NavMenu: FC<NavMenuProps> = ({
             {navlist.map(({ name, href }, i) => {
               return (
                 <Link
+                  onClick={() => setIsActive(false)}
                   onMouseOver={() =>
                     setSelectedLink({ isActive: true, index: i })
                   }
