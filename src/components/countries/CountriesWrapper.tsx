@@ -6,7 +6,11 @@ const CountriesWrapper = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row gap-x-16 gap-y-8 px-4 md:px-28 py-8 md:py-24 text-textColor">
       <Countries />
-      <div className="w-full md:w-[45%] text-left xl:text-right">
+      <div
+        data-scroll
+        data-scroll-speed="0.2"
+        className="w-full md:w-[45%] text-left xl:text-right"
+      >
         <div className="flex flex-col  md:items-end">
           <span className="text-xs md:text-md text-thirdCol font-semibold block uppercase">
             {t("title")}

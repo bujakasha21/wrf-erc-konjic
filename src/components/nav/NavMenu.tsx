@@ -80,12 +80,9 @@ const NavMenu: FC<NavMenuProps> = ({
                 </Link>
               );
             })}
-            <div className="block md:hidden">
-              <ChangeLanguage isActive={isActive} />
-            </div>
           </div>
           <motion.div
-            className="w-[40rem] h-[20rem] relative rounded-md"
+            className="w-[40rem] h-[20rem] relative rounded-md hidden xl:block"
             variants={animations.opacity}
             initial="inital"
             animate={

@@ -93,7 +93,7 @@ const Nav = () => {
             {isActive ? (
               <motion.div
                 initial={{ scale: 0 }}
-                animate={isActive ? { scale: 1.5 } : { scale: 0 }}
+                animate={isActive ? { scale: 1 } : { scale: 0 }}
                 transition={{ duration: 1 }}
                 className="w-full h-full"
               >
