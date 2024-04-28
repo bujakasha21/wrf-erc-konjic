@@ -1,7 +1,7 @@
 import muzej from "@/assets/gallery/muzej.jpg";
 import prenj from "@/assets/gallery/prenj.jpg";
 import bunker from "@/assets/gallery/bunker.jpg";
-import neretva from "@/assets/gallery/neretva.png";
+import neretva from "@/assets/gallery/neretva.jpg";
 import oldbridge from "@/assets/gallery/oldbridge.jpg";
 
 export const galleryData = (locale: string) => [

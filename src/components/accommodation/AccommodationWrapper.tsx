@@ -13,20 +13,20 @@ export default function AccommodationWrapper() {
   const t = useTranslations("Accommodation");
   return (
     <section className="w-full h-[100vh] bg-black/40 z-10 relative overflow-hidden">
-      <div className="z-10 bg-titleCol  opacity-80 absolute inest-0 w-full h-full px-8 py-14 md:px-28 md:py-24 flex flex-col items-start md:items-center justify-center md:flex-row">
-        <div data-scroll data-scroll-speed="0.2" className="">
-          <h2 className="text-4xl md:text-6xl uppercase text-white font-bold z-[30]  ">
+      <div className="z-10 bg-titleCol  opacity-80 absolute inest-0 w-full h-full px-8 py-14 md:px-28 md:py-24 flex flex-col text-center md:text-left items-center md:items-center justify-center md:flex-row">
+        <div data-scroll data-scroll-speed="0.1" className="">
+          <h2 className="text-4xl md:text-6xl uppercase text-white font-bold z-[30]">
             {t("title")}
           </h2>
           <p className="font-thin text-lg text-white my-8">{t("event")}</p>
         </div>
         <div
           data-scroll
-          data-scroll-speed="0.2"
-          className="w-full h-full relative -translate-x-12 md:translate-x-0"
+          data-scroll-speed="0.1"
+          className="w-full h-full relative  md:translate-x-0 flex justify-center md:block"
         >
           <Image
-            className="w-[15rem] h-[15rem] md:w-[30rem] md:h-[30rem]"
+            className="w-[15rem] h-[15rem] md:w-[30rem] md:h-[30rem] "
             src={whiteGardenLogo}
             alt="raft"
           />
