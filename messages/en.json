@@ -10,7 +10,7 @@
   "Event": {
     "title": "About the Championship",
     "event": "Tournament",
-    "desc1": "    Join us in the thrilling currents of Neretva river for the annual Europe Rafting Championship.",
+    "desc1": "Join us in the thrilling currents of Neretva river for the annual Europe Rafting Championship.",
     "desc2": "Witness teams from across 19 nations as they battle through waves in a test of strength, skill, and spirit.This premier event celebrates the unity and excitement of rafting, offering a spectacle of fierce competition and team spirit amidst Bosnia and Herzegovina's stunning natural landscapes.",
     "button": "Tehnical informations"
   },
@@ -27,6 +27,7 @@
     "event": "The europe best",
     "desc1": "Featuring elite rafters from 19 different countries, each team brings their unique prowess and passion to the waters. Get to know the teams, their history, and what drives them to compete at the highest levels of European rafting.",
     "desc2": "This year's lineup includes seasoned champions and rising stars, all converging in Konjic to test their mettle against the formidable currents of the Neretva River. From the strategic teamwork of the French paddlers to the sheer power of the Norwegian squads, each team's story adds a layer of excitement to the championship. Witness as these athletes push their limits, embodying the spirit of adventure and camaraderie that defines the sport of rafting.",
+    "desc3": "At this challenging competition, male senior teams, female teams, mixed teams, and para teams participate. Each of these teams brings its own story, strength, and dedication, creating an unforgettable experience for both athletes and spectators.",
     "btn1": "Timetable",
     "btn2": "Events"
   },
@@ -42,7 +43,7 @@
     "title": "The Flowing Deity",
     "event": "Meet River Neretva",
     "desc1": "Neretva, according to legend called Flowing Divinity by the ancient Illyrians, stretches 230 km from its source to the Adriatic Sea. With its canyon and spectacular strait, this river offers unforgettable natural beauty. Emerging from under the Jabuka mountain, the Neretva is one of the coldest rivers in the world. The upper stream, especially the village of Glavatičevo, is an ideal place for anglers, especially fly fishing enthusiasts.",
-    "desc2": "Rafting on the Neretva is the ultimate experience in nature, providing adrenaline and refreshment at the same time. The journey from Glavatičevo to Konjic offers five hours of enjoyment in the canyon, rapids and hidden beaches. Canyonin on the Neretva is another way to enjoy its charms, offering a unique experience for two. Regardless of the activity, agencies organize tours adapted to every taste and desire."
+    "desc2": "Rafting on the Neretva River is a premier nature experience, providing adrenaline and refreshment simultaneously. It's an opportunity to highlight the spirit of camaraderie, love for nature, and adventurous lifestyle that rafting embodies. The journey from Glavatičevo to Konjic offers 23 kilometers of enjoyment in the canyon, rapids, and hidden beaches. Rafting on the Neretva is another way to enjoy its charms, offering a unique experience. The Neretva provides the perfect stage for rafting enthusiasts, sports rafting, and all visitors seeking unforgettable experiences."
   },
 
   "Sponsors": {
@@ -60,5 +61,14 @@
     "contact": "Contact Us",
     "header": "If you have any questions or concerns, feel free to contact us.",
     "description": "If you encounter any issues with signing up for tournament or have any questions, please don't hesitate to contact us. Fill out the form below, and we'll send you an email with the requested information."
+  },
+
+  "Volunteering": {
+    "heading": "Do you want to be a volunteer?",
+    "description": "Do you want to help us with organization of SENIOR EUROPEAN RAFTING CHAMPIONSHIP? Sign up as a volunteer and become a part of the team!",
+    "button": "Sign up"
+  },
+  "Tehnical": {
+    "soon": "Tehnical informations coming soon"
   }
 }

@@ -27,6 +27,7 @@
     "event": "Najbolji u Europi",
     "desc1": "Predstavljajući elitne rafting timove iz 19 različitih zemalja, svaki tim donosi svoju jedinstvenu sposobnost i strast na vode. Upoznajte timove, njihovu povijest i što ih motivira da se natječu na najvišim razinama evropskog raftinga.",
     "desc2": "Ovogodišnji sastav uključuje iskusne šampione i nadolazeće zvijezde, sve se sastaju u Konjicu kako bi testirali svoje sposobnosti protiv snažnih struja rijeke Neretve. Od strateškog timskog rada francuskih veslača do čiste snage norveških timova, svaka priča tima dodaje sloj uzbuđenja prvenstvu. Budite svjedoci kako ovi sportaši pomiču svoje granice, utjelovljujući duh avanture i zajedništva koji definira sport raftinga.",
+    "desc3": "U ovom izazovnom natjecanju sudjeluju muške seniorske ekipe, ženske ekipe, mješovite ekipe (mix) i para timovi. Svaki od ovih timova donosi svoju priču, snagu i predanost, stvarajući nezaboravno iskustvo kako za sportaše tako i za gledatelje.",
     "btn1": "Raspored",
     "btn2": "Događaji"
   },
@@ -42,7 +43,7 @@
     "title": "Božanstvo koje teče",
     "event": "Upoznajte rijeku Neretvu ",
     "desc1": "Neretva, po legendi nazvana Božanstvo koje teče od strane drevnih Ilira, proteže se 230 km od izvora do Jadranskog mora. Sa svojim kanjonom i spektakularnim tjesnacom, ova rijeka nudi nezaboravne prirodne ljepote. Izvirući ispod planine Jabuke, Neretva je jedna od najhladnijih rijeka na svijetu. Gornji tok, posebno selo Glavatičevo, predstavlja idealno mjesto za ribolovce, posebno ljubitelje fly fishinga.",
-    "desc2": "Rafting na Neretvi je vrhunski doživljaj u prirodi, pružajući adrenalin i osvježenje istovremeno. Putovanje od Glavatičeva do Konjica nudi pet sati uživanja u kanjonu, brzacima i skrivenim plažama. Canyonin na Neretvi je još jedan način da se uživa u njenim čarima, nudeći jedinstveno iskustvo za dvoje. Bez obzira na aktivnost, agencije organizuju ture prilagođene svakom ukusu i željama."
+    "desc2": "Rafting na Neretvi je vrhunski doživljaj u prirodi, pružajući adrenalin i osvježenje istovremeno. To je prilika da se istakne duh zajedništva, ljubav prema prirodi i avanturistički životni stil koji rafting sa sobom nosi. Putovanje od Glavatičeva do Konjica nudi 23 kilometra uživanja u kanjonu, brzacima i skrivenim plažama. Rafting na Neretvi je još jedan način da se uživa u njenim čarima, nudeći jedinstveno iskustvo. Neretva nudi savršenu pozornicu za rafting entuzijaste, sportski rafting i sve posjetioce u potrazi za nezaboravnim iskustvima."
   },
   "Sponsors": {
     "title": "Naši Sponzori"
@@ -60,5 +61,13 @@
     "contact": "Kontaktiraj nas",
     "header": "Nešto vam je nejasno? Slobodno nas kontaktirajte.",
     "description": "Ako imate bilo kakav problem s prijavom ili vam je nešto nejasno, ne ustručavajte se da nas kontaktirate. Popunite formu ispod i šaljemo vam mail sa traženim odgovorima."
+  },
+  "Volunteering": {
+    "heading": "Želiš li da volontiraš?",
+    "description": "Želiš da pomogneš u organizaciji SENIORSKOG EVROPSKOG PRVENSTVA U RAFTINGU? Prijavi se kao volonter i postani dio tima!",
+    "button": "Prijavi se"
+  },
+  "Tehnical": {
+    "soon": "Tehničke informacije uskoro"
   }
 }
