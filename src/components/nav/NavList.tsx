@@ -44,7 +44,7 @@ const NavList: FC<NavMenuProps> = ({ selectedLink, setSelectedLink }) => {
             className="overflow-hidden"
           >
             <motion.p
-              className="flex text-4xl font-thin"
+              className="flex text-2xl font-thin"
               variants={animations.blur}
               initial="inital"
               animate={

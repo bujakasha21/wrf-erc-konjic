@@ -21,13 +21,13 @@ const Volontiranje = () => {
       <div
         data-scroll
         data-scroll-speed="0.1"
-        className="flex absolute flex-col md:flex-row items-center justify-evenly md:justify-between h-full px-4 md:px-28 py-8"
+        className="flex absolute w-full flex-col md:flex-row items-center justify-evenly md:justify-between h-full px-4 md:px-28 py-8"
       >
         <div className="flex flex-col gap-y-8 w-full md:w-3/4 text-white">
           <h1 className="text-5xl font-bold uppercase">{t("heading")}</h1>
           <p className="w-full font-medium md:w-2/3">{t("description")}</p>
         </div>
-        <div className="flex items-start justify-start md:justify-end w-full md:w-1/3">
+        <div className="flex items-start justify-start md:justify-end w-full md:w-1/3 mr-0 md:mr-20">
           <Magnetic>
             <Button
               px="px-7"

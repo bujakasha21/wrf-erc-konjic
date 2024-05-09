@@ -9,7 +9,10 @@ const Organization = () => {
   const t = useTranslations("Organization");
   const locale = useLocale();
   return (
-    <section className="py-14 md:py-24 w-full px-4 md:px-28 grid grid-cols-1 md:grid-cols-2 items-start gap-8 text-textColor">
+    <section
+      id="organization"
+      className="py-14 md:py-24 w-full px-4 md:px-28 grid grid-cols-1 md:grid-cols-2 items-start gap-8 text-textColor"
+    >
       <div data-scroll data-scroll-speed="0.2">
         <div className="flex flex-col md:items-start text-left gap-y-2">
           <span className="text-xs md:text-sm text-thirdCol font-medium ">

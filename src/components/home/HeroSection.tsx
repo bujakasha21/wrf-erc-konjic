@@ -37,7 +37,7 @@ const HeroSection = () => {
               {t("desc2")}
             </p>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center gap-x-3 md:gap-x-8">
             <Image
               className="w-[5rem] h-[5rem] xl:w-[12rem] xl:h-[12rem]"
               src={gardenCityLogoWhite}
