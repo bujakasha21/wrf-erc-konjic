@@ -30,7 +30,7 @@ const Organization = () => {
           <Magnetic>
             {/* <MotionButton name="REZERVISI" onClick={() => console.log("first")} /> */}
             <Button py="py-[3rem]" px="px-[1.5rem] text-xs relative">
-              <Link href="/" className="">
+              <Link href="/#galerija" className="">
                 {t("btn1")}
               </Link>
             </Button>
@@ -43,7 +43,7 @@ const Organization = () => {
                 locale === "en" ? "px-[2rem]" : "px-[1.5rem]"
               }  text-xs relative`}
             >
-              <Link href="/" className="">
+              <Link href="/#lokacija" className="">
                 {t("btn2")}
               </Link>
             </Button>

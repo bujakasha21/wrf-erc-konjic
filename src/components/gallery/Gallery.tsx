@@ -19,7 +19,7 @@ export default function Gallery() {
   }, [locale]);
 
   return (
-    <main ref={container} className="w-full relative mt-[300px]">
+    <main id="galerija" ref={container} className="w-full relative mt-[300px]">
       {projects.map((project, i) => {
         const targetScale = 1 - (projects.length - i) * 0.05;
         return (
