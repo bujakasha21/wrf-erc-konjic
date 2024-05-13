@@ -6,6 +6,7 @@ import wrf from "@/assets/logo_wrf_white.png";
 import konjic from "@/assets/logo-komplet-removebg-preview – kopija.png";
 import gardenLogo from "@/assets/gardenLogo.png";
 import kajakLogo from "@/assets/kajakLogo.png";
+import gradKonjicLogo from "@/assets/gradKonjic.png";
 
 import React, { useEffect, useRef } from "react";
 
@@ -44,6 +45,13 @@ const Sponsors = () => {
             <Image
               className="w-[12rem] h-[12rem]"
               src={gardenLogo}
+              alt="raft"
+            />
+          </Link>
+          <Link target="_blank" href="https://www.konjic.ba">
+            <Image
+              className="w-[10rem] h-[7rem]"
+              src={gradKonjicLogo}
               alt="raft"
             />
           </Link>

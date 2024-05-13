@@ -35,7 +35,11 @@ const Volontiranje = () => {
                 locale === "en" ? "py-[3rem]" : "py-[3rem]"
               }  text-xs relative`}
             >
-              <Link href={"#"} className="block mx-auto">
+              <Link
+                href="https://docs.google.com/forms/d/1dAfU5EEn8xgglUzSRTRc3DgDsPhDxU7NuedCmKrow1o/viewform?edit_requested=true"
+                target="_blank"
+                className="block mx-auto"
+              >
                 {t("button")}
               </Link>
             </Button>
