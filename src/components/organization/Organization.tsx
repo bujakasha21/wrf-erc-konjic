@@ -9,7 +9,10 @@ const Organization = () => {
   const t = useTranslations("Organization");
   const locale = useLocale();
   return (
-    <section className="py-14 md:py-24 w-full px-4 md:px-28 grid grid-cols-1 md:grid-cols-2 items-start gap-8 text-textColor">
+    <section
+      id="organization"
+      className="py-14 md:py-24 w-full px-4 md:px-28 grid grid-cols-1 md:grid-cols-2 items-start gap-8 text-textColor"
+    >
       <div data-scroll data-scroll-speed="0.2">
         <div className="flex flex-col md:items-start text-left gap-y-2">
           <span className="text-xs md:text-sm text-thirdCol font-medium ">
@@ -27,7 +30,7 @@ const Organization = () => {
           <Magnetic>
             {/* <MotionButton name="REZERVISI" onClick={() => console.log("first")} /> */}
             <Button py="py-[3rem]" px="px-[1.5rem] text-xs relative">
-              <Link href="/" className="">
+              <Link href="/#galerija" className="">
                 {t("btn1")}
               </Link>
             </Button>
@@ -40,7 +43,7 @@ const Organization = () => {
                 locale === "en" ? "px-[2rem]" : "px-[1.5rem]"
               }  text-xs relative`}
             >
-              <Link href="/" className="">
+              <Link href="/#lokacija" className="">
                 {t("btn2")}
               </Link>
             </Button>

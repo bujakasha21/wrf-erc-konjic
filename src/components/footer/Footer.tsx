@@ -70,7 +70,7 @@ function Footer() {
                   <Magnetic key={i + href + name}>
                     <Link
                       className="hidden md:block cursor-pointer text-white hover:text-thirdCol uppercase"
-                      href={`${locale}/${href}`}
+                      href={`/${href}`}
                     >
                       {name}{" "}
                     </Link>

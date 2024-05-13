@@ -12,8 +12,8 @@ const ContactHeading = () => {
         data-scroll-speed="0.2"
         className="absolute w-full md:w-2/3 px-4 md:px-28 flex flex-col text-left md:items-start justify-center pt-60"
       >
-        <span className="text-xs md:text-sm text-thirdCol font-medium text-left">
-          <span className="text-xs md:text-md font-semibold block uppercase ">
+        <span className="text-xs md:text-md text-thirdCol font-medium text-left">
+          <span className="pb-6 font-semibold block uppercase ">
             {t("contact")}
           </span>
         </span>
