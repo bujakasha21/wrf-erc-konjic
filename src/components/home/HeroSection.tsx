@@ -8,6 +8,7 @@ import headerPhoto from "@/assets/header1.jpg";
 import wrf from "@/assets/wrf-text-white.png";
 import logoWhite from "@/assets/logo-white.png";
 import gardenCityLogoWhite from "@/assets/gardenCityLogoWhite.png";
+import gradKonjic from "@/assets/gradKonjic.png";
 
 const HeroSection = () => {
   const t = useTranslations("Header");
@@ -46,6 +47,11 @@ const HeroSection = () => {
             <Image
               className="w-[5rem] h-[2.5rem]  xl:w-[10rem] xl:h-[5rem]"
               src={wrf}
+              alt="raft"
+            />
+            <Image
+              className="w-[5rem] h-[3rem] xl:w-[8rem] xl:h-[6rem]"
+              src={gradKonjic}
               alt="raft"
             />
             <Image
