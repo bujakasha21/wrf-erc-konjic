@@ -6,9 +6,6 @@ import { useScroll } from "framer-motion";
 import { useMemo, useRef } from "react";
 import { useLocale } from "next-intl";
 
-import sponsorBanner from "@/assets/sponsorBanner.jpg";
-import Image from "next/image";
-
 export default function Gallery() {
   const locale = useLocale();
   const container = useRef<HTMLElement | null>(null);
@@ -22,35 +19,20 @@ export default function Gallery() {
   }, [locale]);
 
   return (
-    <>
-      <main
-        id="galerija"
-        ref={container}
-        className="w-full relative mt-[300px]"
-      >
-        {projects.map((project, i) => {
-          const targetScale = 1 - (projects.length - i) * 0.05;
-          return (
-            <Card
-              key={`p_${i}`}
-              i={i}
-              {...project}
-              progress={scrollYProgress}
-              range={[i * 0.25, 1]}
-              targetScale={targetScale}
-            />
-          );
-        })}
-      </main>
-      <div>
-        <div className="w-full h-full hidden lg:block">
-          <Image
-            src={sponsorBanner}
-            alt="Rafting"
-            className="w-full h-full object-cover"
+    <main id="galerija" ref={container} className="w-full relative mt-[300px]">
+      {projects.map((project, i) => {
+        const targetScale = 1 - (projects.length - i) * 0.05;
+        return (
+          <Card
+            key={`p_${i}`}
+            i={i}
+            {...project}
+            progress={scrollYProgress}
+            range={[i * 0.25, 1]}
+            targetScale={targetScale}
           />
-        </div>
-      </div>
-    </>
+        );
+      })}
+    </main>
   );
 }

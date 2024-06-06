@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useMemo, useRef, useState } from "react";
 import WhiteLogo from "@/assets/logo-white.png";
 import Image from "next/image";
-import { navbarList, navbarList2 } from "@/data/nav/nav";
+import { navbarList2 } from "@/data/nav/nav";
 
 import { useLocale } from "next-intl";
 import Magnetic from "../utils/Magnetic";
