@@ -9,17 +9,17 @@ const Informations = () => {
         <hr className="w-full my-8 border-[1px] border-gray-300" />
         <div className="flex flex-col px-60 my-14 w-full">
           <DownloadButton
-            fileUrl="/EventAbout.pdf"
+            fileUrl="/download/EventAbout.pdf"
             fileName="Informations About Event"
           />
           <hr className=" my-4" />
           <DownloadButton
-            fileUrl="/BS-raspored.jpg"
+            fileUrl="/download/BS-raspored.jpg"
             fileName="BS Raspored Takmicenja"
           />
           <hr className=" my-4" />
           <DownloadButton
-            fileUrl="/ENG-schedule.jpg"
+            fileUrl="/download/ENG-schedule.jpg"
             fileName="ENG Tournament Schedule"
           />
         </div>
